@@ -1,0 +1,14 @@
+@import url('./css/style.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+.padding-230px{
+    padding: 0 230px 0 230px;
+}
+.margin-230px{
+    margin: 0 230px 0 230px;
+}
