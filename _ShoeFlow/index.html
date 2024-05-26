@@ -29,7 +29,7 @@
         </section>
         <div class="nevBar padding-230px">
             <div class="nevBar-Menu">
-                <p>Home</p>
+                <p class="btn">Home</p>
                 <p>About</p>
                 <p>Shop</p>
                 <p>Blog</p>
@@ -46,25 +46,47 @@
             </div>
         </div>
 
-        <section class="section-2">
-            <div class="section-2-container">
-                <div class="section-2-content-a">
-                    <h1>Step into Greatness with Shoeflow- Your Path to Style</h1>
-                    <h3>Velocity Venture</h3>
-                    <button class="section-2-view-product-btn"><p>View Product</p></button>
-                </div>
-                <div class="section-2-content-b">
-                    <img style="width: 550px;" src="./img/animate-shoe-1.webp" alt="">
-                </div>
+        <section class="section-2  animate__animated animate__bounce" id="section-2">
+            <div class="section2-group">
+
             </div>
-            <div class="fiveBtnContainer">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="fiveBtnContainer" id="fiveBtnGroup">
+                <button class="num active" num="1"></button>
+                <button class="num" num="2"></button>
+                <button class="num" num="3"></button>
+                <button class="num" num="4"></button>
+                <button class="num" num="5"></button>
             </div>
         </section>
+
+        <div class="rotatingImagesContainer">
+            <div class="rotatingImages">
+                <div>
+                    <img src="./img/smile.svg" alt="">
+                    <img src="./img/sagitta.svg" alt="">
+                    <img src="./img/sirius.svg" alt="">
+                    <img src="./img/bronx.svg" alt="">
+                    <img src="./img/iris.svg" alt="">
+                    <img src="./img/callisto.svg" alt="">
+                    <img src="./img/pristin.svg" alt="">
+                    <img src="./img/orin.svg" alt="">
+                    <img src="./img/ionia.svg" alt="">
+                    <img src="./img/sigma.svg" alt="">
+                </div>
+                <div>
+                    <img src="./img/smile.svg" alt="">
+                    <img src="./img/sagitta.svg" alt="">
+                    <img src="./img/sirius.svg" alt="">
+                    <img src="./img/bronx.svg" alt="">
+                    <img src="./img/iris.svg" alt="">
+                    <img src="./img/callisto.svg" alt="">
+                    <img src="./img/pristin.svg" alt="">
+                    <img src="./img/orin.svg" alt="">
+                    <img src="./img/ionia.svg" alt="">
+                    <img src="./img/sigma.svg" alt="">
+                </div>
+            </div>
+        </div>
 
 
 
@@ -73,6 +95,21 @@
         <footer style="height: 10000px;">
 
         </footer>
+
+<!-- Templates -->
+
+        <template id="contentTemplate">
+            <div class="section-2-container animate__animated animate__bounce">
+                <div class="section-2-content-a">
+                    <h1 class="content-title">Step into Greatness with Shoeflow- Your Path to Style</h1>
+                    <h3 class="content-type">Velocity Venture</h3>
+                    <button class="section-2-view-product-btn"><p>View Product</p></button>
+                </div>
+                <div class="section-2-content-b">
+                    <img class="content-img" style="width: 550px;" src="./img/animate-shoe-1.webp" alt="">
+                </div>
+            </div>
+        </template>
     </main>
 
     <script type="module" src="./mian.js"></script>
