@@ -1,4 +1,4 @@
-import { contentTemplate, section2, section2Group } from "./selectors.js";
+import { changeTitleTemplate, contentTemplate, headerMidGroup, section2Group } from "./selectors.js";
 import { contentAPIs } from "./variables.js";
 
 export const createContent = (api) => {
@@ -53,3 +53,18 @@ export const fiveBtnGroupHandler = (e) => {
 // export const autoChangeRender = () => {
 //   autoChange;
 // };
+
+
+export const createChangeTitle = (titles) => {
+  const template = changeTitleTemplate.content.cloneNode(true);
+  template.querySelector(".changeTitle").innerText = titles.title;
+  template.querySelector(".changeTitle").setAttribute("vai",titles.id);
+
+  return template;
+}
+
+export const createChangeTitleRender = (titles) => {
+  titles.forEach((title) => {
+    headerMidGroup.append(createChangeTitle(title))
+  })
+}

@@ -36,6 +36,21 @@ export const contentAPIs = [
     }
 ]
 
+export const changeTitles = [
+    {
+        id : 1,
+        title : "Products"
+    },
+    {
+       id : 2,
+       title : "Shoes" 
+    },
+    {
+        id : 3,
+        title : "Categories"
+    }
+]
+
 export const fiveBtn = [
     {
         id : 1
