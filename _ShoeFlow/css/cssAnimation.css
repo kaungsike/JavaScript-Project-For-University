@@ -31,6 +31,20 @@
     }
 }
 
+.left_to_right{
+    animation-name: left_to_right;
+    animation-duration: 5s;
+}
+
+@keyframes left_to_right {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+
 .active{
     background-color: red;
 }
