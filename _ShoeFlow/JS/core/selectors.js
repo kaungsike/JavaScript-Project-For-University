@@ -1,12 +1,15 @@
 export const contentTemplate = document.querySelector("#contentTemplate");
 export const changeTitleTemplate = document.querySelector("#changeTitleTemplate")
+export const section_4_card = document.querySelector("#section-4-card")
 
 
 
 export const section2 = document.querySelector("#section-2")
 
+// group
 export const section2Group = document.querySelector(".section2-group")
 export const headerMidGroup = document.querySelector("#header-mid");
+export const section4CardGroup = document.querySelector("#section-4-card-group");
 
 
 
