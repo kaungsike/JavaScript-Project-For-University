@@ -664,6 +664,50 @@
       border: 1px solid white;
       width: 100%;
       height: 554px;
+      .user-profiles-container{
+        border: 1px solid white;
+        width: 100%;
+        height: 120px;
+        .user-profile{
+          border: 2px solid black;
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          transition-duration: 200ms;
+          overflow: hidden;
+          display: flex;
+          place-items: center;
+          justify-content: center;
+          background-color: black;
+          padding: 5px;
+          div{
+            width: 102px;
+            height: 102px;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            /* margin: 4px; */
+            img{
+              width: 102px;
+              /* border: 2px solid black; */
+              border-radius: 50%;
+            }
+          }
+        }
+        .user-profile:hover{
+          border: 2px solid white;
+        }
+        .user-profile:active{
+          background-color: red;
+        }
+      .user-comments-container{
+        border: 1px solid white;
+        width: 100%;
+        height: 354px;
+        padding-top: 15px;
+        margin-top: 50px;
+      }
     }
+  }
   }
 }
