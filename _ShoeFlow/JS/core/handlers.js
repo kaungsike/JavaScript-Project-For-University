@@ -1,4 +1,4 @@
-import { changeTitleTemplate, contentTemplate, headerMidGroup, section2Group } from "./selectors.js";
+import { changeTitleTemplate, contentTemplate, headerMidGroup, reviewUserProfileTemplate, section2Group, userReviewProfilesGroup } from "./selectors.js";
 import { contentAPIs } from "./variables.js";
 
 export const createContent = (api) => {
@@ -66,5 +66,20 @@ export const createChangeTitle = (titles) => {
 export const createChangeTitleRender = (titles) => {
   titles.forEach((title) => {
     headerMidGroup.append(createChangeTitle(title))
+  })
+}
+
+
+export const createReviewUserProfile = (user) => {
+  const template = reviewUserProfileTemplate.content.cloneNode(true);
+  template.querySelector("img").src = user.img;
+  template.querySelector("button").setAttribute("number",user.id);
+
+  return template;
+}
+
+export const createReviewUserProfileRender = (users) => {
+  users.forEach((user) => {
+    userReviewProfilesGroup.append(createReviewUserProfile(user))
   })
 }

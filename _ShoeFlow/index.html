@@ -173,12 +173,8 @@
                     <p>"See what our valued customers have to say about their ShoeFlow experience! From tech <br> enthusiasts to professionals and digital nomads</p>
                 </div>
                 <div class="section-6-body">
-                    <div class="user-profiles-container">
-                        <button class="user-profile">
-                            <div>
-                                <img src="https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e5_portrait-bearded-young.webp" alt="">
-                            </div>
-                        </button>
+                    <div class="user-profiles-container" id="user-review-profiles-group">
+                        <!-- appended -->
                     </div>
                     <div class="user-comments-container">
 
@@ -245,6 +241,15 @@
                 </div>
             </div>
         </template>
+
+        <template id="reviewUserProfileTemplate">
+            <button class="user-profile">
+                <div>
+                    <img class="review-user-img" src="https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e5_portrait-bearded-young.webp" alt="">
+                </div>
+            </button>
+        </template>
+
     </main>
 
     <script type="module" src="./mian.js"></script>

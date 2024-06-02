@@ -668,6 +668,10 @@
         border: 1px solid white;
         width: 100%;
         height: 120px;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        gap: 15px;
         .user-profile{
           border: 2px solid black;
           width: 110px;
@@ -681,18 +685,20 @@
           background-color: black;
           padding: 5px;
           div{
-            width: 102px;
-            height: 102px;
+            width: 100px;
+            height: 100px;
             display: flex;
             place-items: center;
             justify-content: center;
             /* margin: 4px; */
             img{
-              width: 102px;
-              /* border: 2px solid black; */
+              width: 100px;
               border-radius: 50%;
             }
           }
+        }
+        .user-profile:nth-child(even){
+          margin-top: 80px;
         }
         .user-profile:hover{
           border: 2px solid white;
