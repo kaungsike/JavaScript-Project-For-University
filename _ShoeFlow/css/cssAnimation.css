@@ -45,6 +45,20 @@
     }
 }
 
+.fate-out{
+    animation-name: fate-out;
+    animation-duration: 1.5s;
+}
+
+@keyframes fate-out {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+
 .active{
     background-color: red;
 }

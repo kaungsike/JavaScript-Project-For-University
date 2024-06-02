@@ -1,5 +1,14 @@
-import { changeTitleTemplate, contentTemplate, headerMidGroup, reviewUserProfileTemplate, section2Group, userReviewProfilesGroup } from "./selectors.js";
-import { contentAPIs } from "./variables.js";
+import {
+  changeTitleTemplate,
+  contentTemplate,
+  headerMidGroup,
+  reviewUserProfileTemplate,
+  section2Group,
+  userReviewGroup,
+  userReviewProfilesGroup,
+  userReviewTemplate,
+} from "./selectors.js";
+import { contentAPIs, userReviews } from "./variables.js";
 
 export const createContent = (api) => {
   const template = contentTemplate.content.cloneNode(true);
@@ -54,32 +63,58 @@ export const fiveBtnGroupHandler = (e) => {
 //   autoChange;
 // };
 
-
 export const createChangeTitle = (titles) => {
   const template = changeTitleTemplate.content.cloneNode(true);
   template.querySelector(".changeTitle").innerText = titles.title;
-  template.querySelector(".changeTitle").setAttribute("vai",titles.id);
+  template.querySelector(".changeTitle").setAttribute("vai", titles.id);
 
   return template;
-}
+};
 
 export const createChangeTitleRender = (titles) => {
   titles.forEach((title) => {
-    headerMidGroup.append(createChangeTitle(title))
-  })
-}
-
+    headerMidGroup.append(createChangeTitle(title));
+  });
+};
 
 export const createReviewUserProfile = (user) => {
   const template = reviewUserProfileTemplate.content.cloneNode(true);
   template.querySelector("img").src = user.img;
-  template.querySelector("button").setAttribute("number",user.id);
+  template.querySelector("button").setAttribute("number", user.id);
 
   return template;
-}
+};
 
 export const createReviewUserProfileRender = (users) => {
   users.forEach((user) => {
-    userReviewProfilesGroup.append(createReviewUserProfile(user))
-  })
-}
+    userReviewProfilesGroup.append(createReviewUserProfile(user));
+  });
+};
+
+export const createUserReview = (userReviews) => {
+  const template = userReviewTemplate.content.cloneNode(true);
+  template.querySelector("div").setAttribute("number", userReviews.id);
+  template.querySelector("img").src = userReviews.img2;
+  template.querySelector("h6").innerText = userReviews.name;
+  template.querySelector(".user-job").innerText = userReviews.job;
+  template.querySelector(".user-reviews").innerText = userReviews.review;
+
+  return template;
+};
+
+export const createUserReviewRender = (userReviews) => {
+  userReviewGroup.innerHTML = ``;
+  userReviews.forEach((userReview) => {
+    userReviewGroup.append(createUserReview(userReview));
+  });
+};
+
+export const userReviewProfilesGroupHandler = (e) => {
+  if (e.target.classList.contains("user-profile")) {
+    const number = parseInt(e.target.getAttribute("number"));
+    createUserReviewRender(
+      userReviews.filter((userReview) => 
+        userReview.id === number
+    ))
+  }
+};

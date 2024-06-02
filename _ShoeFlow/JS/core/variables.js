@@ -101,6 +101,7 @@ export const userReviews = [
         id : 1,
         name : 'David Smith',
         img : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e5_portrait-bearded-young.webp',
+        img2 : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp',
         job : 'IT Professional',
         review : `Shoeflow is more than just a brand; it's a promise of excellence. From their sleek designs to their unbeatable comfort, Shoeflow shoes have become an essential part of my wardrobe. Whether I'm striding through the city streets or dancing the night away, Shoeflow keeps me looking and feeling my best. Thank you, Shoeflow, for elevating my shoe game to new heights!`
     },
@@ -108,6 +109,7 @@ export const userReviews = [
         id : 2,
         name : 'Michael Chang',
         img : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11cb_joanna-nix-walkup-h2pnXHMz8YM-unsplash.webp',
+        img2 : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp',
         job : 'Professional Gamer',
         review : `I've tried many shoe brands, but Shoeflow stands out above the rest. Not only are their designs trendy and comfortable, but the quality is exceptional. I've been a loyal customer for years, and I can confidently say that Shoeflow shoes are a true testament to excellence.`
     },
@@ -115,6 +117,7 @@ export const userReviews = [
         id : 3,
         name :'Billy Mars',
         img : 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D',
+        img2 : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp',
         job : 'Tech Enthusiast',
         review : `Shoeflow is a game-changer! Their shoes aren't just footwear; they're an expression of individuality and style. Every time I slip into a pair of Shoeflow shoes, I feel like I'm stepping into my own personal spotlight. Comfort, quality, and fashion all in one – Shoeflow has truly redefined what it means to walk with confidence.`
     },
@@ -122,13 +125,15 @@ export const userReviews = [
         id : 4,
         name : 'Sarah Johnson',
         job : 'Tech Enthusiast',
-        img : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk4fHxwZXJzb258ZW58MHx8MHx8fDA%3D',
+        img : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJthOUoDCQeBuEYsp8fe5KitwH3lNgkCykMw&s',
+        img2 : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp',
         review : `I've always struggled to find shoes that fit my unique style and personality until I discovered Shoeflow. Their diverse collection caters to every taste, from classic to trendy. Thanks to Shoeflow, I finally feel like I'm walking in shoes that truly reflect who I am.`
     },
     {
         id : 5,
         name : 'Omar Andrew',
         img : 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk4fHxwZXJzb258ZW58MHx8MHx8fDA%3D',
+        img2 : 'https://assets-global.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp',
         job : 'Tech Enthusiast',
         review : `Shoeflow isn't just a shoe brand; it's a lifestyle. From casual outings to special occasions, Shoeflow has the perfect pair for every moment. The durability and comfort of their shoes have exceeded my expectations time and time again. I'm proud to be a Shoeflow supporter!`
     }

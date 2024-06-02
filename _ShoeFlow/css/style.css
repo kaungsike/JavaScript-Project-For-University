@@ -633,7 +633,6 @@
 }
 
 .section-6{
-  border: 1px solid white;
   width: 100%;
   height: 710px;
   margin: 100px 0px;
@@ -661,11 +660,9 @@
       }
     }
     .section-6-body{
-      border: 1px solid white;
       width: 100%;
       height: 554px;
       .user-profiles-container{
-        border: 1px solid white;
         width: 100%;
         height: 120px;
         display: flex;
@@ -682,7 +679,7 @@
           display: flex;
           place-items: center;
           justify-content: center;
-          background-color: black;
+          background-color: transparent;
           padding: 5px;
           div{
             width: 100px;
@@ -690,10 +687,11 @@
             display: flex;
             place-items: center;
             justify-content: center;
-            /* margin: 4px; */
+            pointer-events: none;
             img{
               width: 100px;
               border-radius: 50%;
+              pointer-events: none;
             }
           }
         }
@@ -703,15 +701,46 @@
         .user-profile:hover{
           border: 2px solid white;
         }
-        .user-profile:active{
+        /* .user-profile:active{
           background-color: red;
+        } */
+    }
+    .user-comments-container{
+      width: 100%;
+      height: 354px;
+      padding-top: 15px;
+      margin-top: 70px;
+      padding: 0 375px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      div{
+        display: flex;
+        height: 100%;
+        border-bottom: 2px solid white;
+        flex-direction: column;
+        place-items: center;
+        transition-duration: 300ms;
+        img{
+          width: 40px;
+          margin-bottom: 5px;
         }
-      .user-comments-container{
-        border: 1px solid white;
-        width: 100%;
-        height: 354px;
-        padding-top: 15px;
-        margin-top: 50px;
+        .user-name{
+          font-size: 24px;
+        }
+        .user-job{
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .user-reviews{
+          font-size: 18px;
+          margin: 20px 0 30px 0;
+          text-align: center;
+          line-height: 28px;
+          color: darkgray;
+        }
       }
     }
   }
