@@ -870,3 +870,54 @@
     }
   }
 }
+
+.section-8{
+  width: 100%;
+  height: 306px;
+  margin: 100px 0;
+  .section-8-container{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      h4{
+        font-size:38px ;
+        font-weight: 750;
+        color: white;
+      }
+      a{
+        height: 54px;
+        width: 200px;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        div{
+          p{
+            color: red;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    img{
+      height: 367px;
+      position: absolute;
+      bottom: 0;
+      right: 100px;
+    }
+  }
+}
