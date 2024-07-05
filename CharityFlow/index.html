@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="p-0 m-0 h-[10000px]">
+  <body class="p-0 m-0 h-[10000px] w-full">
     <main id="app">
-      <div
-        class="bg-pur-100 w-full h-[48px] flex items-center justify-between px-28"
+
+      <section class="bg-pur-100">
+        <div
+        class=" w-full h-[66px] 2xl:h-[48px] 2xl:gap-0 gap-1 flex 2xl:flex-row flex-col 2xl:items-center items-center justify-center 2xl:justify-between container mx-auto"
       >
         <div class="flex items-center gap-3">
           <p class="text-white flex items-center gap-1">
@@ -48,6 +50,7 @@
             <a class="link text-sm">+91 123 456 789</a>
           </p>
         </div>
+
         <div class="flex items-center gap-3">
           <p class="text-white flex items-center gap-1">
             <i class="fa-brands fa-facebook-f size-4"></i>
@@ -63,30 +66,84 @@
           </p>
         </div>
       </div>
+      </section>
 
-      <header>
+      <header class="bg-pur-200 overflow-hidden">
         <div
-          class="border border-black bg-pur-200 w-full h-[886px] relative overflow-hidden px-28"
+          class=" w-full h-[886px] relative container mx-auto"
         >
+
           <img
-            class="absolute opacity-15 h-[500px] rotate-12 -right-[600px] -top-[280px] pointer-events-none"
+            class="lg:absolute lg:flex hidden opacity-15  lg:h-[500px] lg:rotate-12 lg:-right-[600px] lg:-top-[280px] pointer-events-none"
             src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f2f7702a0ee17b6a7a8dc_pattern-01.svg"
             alt=""
           />
           <img
-            class="absolute opacity-10 h-[500px] rotate-12 -bottom-[250px] -left-[600px] pointer-events-none"
+            class="lg:block hidden absolute opacity-10 h-[500px] rotate-12 -bottom-[250px] -left-[600px] pointer-events-none"
             src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f2f7702a0ee17b6a7a8dc_pattern-01.svg"
             alt=""
           />
 
-          <div class="navbar bg-transparent text-white mt-10">
-            <div class="navbar-start">
-              <a class="text-xl"
-                ><img
+          <div class="navbar bg-transparent text-white lg:mt-10">
+            <div class="navbar-start flex items-center gap-36 justify-between">
+                <img
                   src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6673fa17a4f0384cfab9216a_charityflow-light.svg"
                   alt=""
-              /></a>
+                  class="h-[40px]"
+              />
+              <label for="my-drawer-4"  class="btn btn-circle drawer-button lg:hidden swap swap-rotate ">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" />
+              
+                <!-- hamburger icon -->
+                <svg
+                  class="swap-off fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 512 512">
+                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+              
+                <!-- close icon -->
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 512 512">
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+              </label>
+
+              <div class="drawer h-[100px] drawer-end lg:hidden relative">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-side ">
+                  <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+
+                    <!-- Sidebar content here -->
+                    <ul class="menu bg-white text-black rounded-box w-56 absolute top-40">
+                      <li><a>Home</a></li>
+                      <li><a>Cause</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Contact</a></li>
+                      <li>
+                        <details open>
+                          <summary>Pages</summary>
+                          <ul>
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+
+                </div>
+              </div>
+
             </div>
+
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li><a class="text-xl">Home</a></li>
@@ -105,16 +162,16 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn text-lg h-[60px] text-pur-200 w-[200px] z-50 rounded-full"
+              <a class="btn hidden 2xl:flex text-lg h-[60px] text-pur-200 w-[200px] z-50 rounded-full"
                 >Donate Now</a
               >
             </div>
           </div>
 
           <div
-            class="w-[681px] h-[396px] flex flex-col items-start justify-between 2xl:mt-[150px]"
+            class="lg:w-[681px] h-[227px] lg:h-[396px] flex flex-col lg:gap-0 gap-4 items-start justify-between 2xl:mt-[150px]"
           >
-            <h1 class="text-white text-[70px] font-bold">
+            <h1 class="text-white text-[36px] lg:text-[70px] font-bold">
               Help us <span class="text-pur-100"> build </span> hope and homes
             </h1>
             <p class="text-white text-[18px]">
@@ -128,24 +185,26 @@
             </button>
           </div>
 
-          <div class="images">
+          <div class="images grid grid-cols-2 mt-[100px] gap-2">
             <img
-              class="mask mask-circle absolute top-[280px] left-[850px] w-[270px]"
-              src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6659712cbd990c25f51c271e_hero-image-02.webp"
-            />
-            <img
-              class="mask mask-circle absolute top-[120px] left-[1200px] w-[320px]"
+              class="mask mask-circle lg:absolute lg:top-[120px] lg:left-[1200px] lg:w-[320px] w-[192px]"
               src="	https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6659708a544d2a2b00bf3c8e_hero-image-01.webp"
             />
             <img
-              class="mask mask-circle absolute top-[450px] right-[100px] w-[220px]"
+              class="mask mask-circle lg:absolute lg:top-[280px] lg:left-[850px] lg:w-[270px] w-[192px]"
+              src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6659712cbd990c25f51c271e_hero-image-02.webp"
+            />
+            <img
+              class="mask mask-circle lg:absolute lg:top-[450px] lg:right-[100px] lg:w-[220px] w-[192px]"
               src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f33fd4745969df3027074_hero-image-02.webp"
             />
             <img
-              class="mask mask-circle absolute bottom-[80px] right-[680px] w-[150px]"
+              class="mask mask-circle lg:absolute lg:bottom-[80px] lg:right-[680px] lg:w-[150px] w-[192px]"
               src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f34a75cb2255bdecaa825_hero-image-04.webp"
             />
           </div>
+
+
         </div>
       </header>
     </main>
