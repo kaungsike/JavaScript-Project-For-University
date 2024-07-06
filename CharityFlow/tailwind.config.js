@@ -9,7 +9,8 @@ export default {
       colors : {
         pur : {
           100 : "#9A5999",
-          200 : "#391D47"
+          200 : "#391D47",
+          300 : "#f9edff",
         },
         yy : {
           100 : "#FFD166"
@@ -22,7 +23,7 @@ export default {
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
-        '2xl': '6rem',
+        '2xl': '1px',
       },
     },
   },
