@@ -26,6 +26,9 @@ export default {
         '2xl': '1px',
       },
     },
+    rotate : {
+      30 : "30deg"
+    }
   },
   plugins: [
     require('daisyui'),
