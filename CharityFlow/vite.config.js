@@ -5,7 +5,8 @@ export default defineConfig ({
     root : './',
     publicDir : 'src',
     build : {
-        outDir : 'dist',
+        outDir : 'src',
+        
     },
     css : {
         postcss : './postcss.config.js'
