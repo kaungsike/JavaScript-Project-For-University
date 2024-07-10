@@ -1,121 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body class="h-[10000px]">
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="h-[10000px]">
     <main id="app">
-        <section>
-            <div class="w-full lg:h-[117px] h-[62px] bg-pur-300">
-                <div class="container mx-auto h-full flex items-center">
-                    <div class="navbar bg-transparent text-black">
-                        <div class="navbar-start flex items-center gap-36 justify-between">
-                          <img src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6673fa17555f6d6497f5f466_charityflow.svg" alt="" class="h-[40px]">
-                          <label for="my-drawer-4" class="btn btn-circle drawer-button lg:hidden swap swap-rotate">
-                            <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox">
-            
-                            <!-- hamburger icon -->
-                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"></path>
-                            </svg>
-            
-                            <!-- close icon -->
-                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-                              <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"></polygon>
-                            </svg>
-                          </label>
-            
-                          <div class="drawer h-[100px] drawer-end lg:hidden relative">
-                            <input id="my-drawer-4" type="checkbox" class="drawer-toggle">
-                            <div class="drawer-side">
-                              <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-            
-                              <!-- Sidebar content here -->
-                              <ul class="menu bg-white text-black rounded-box w-56 absolute top-40">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a>Cause</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a>Contact</a></li>
-                                <li>
-                                  <details open="">
-                                    <summary>Pages</summary>
-                                    <ul>
-                                      <li><a>Submenu 1</a></li>
-                                      <li><a>Submenu 2</a></li>
-                                    </ul>
-                                  </details>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="navbar-center hidden lg:flex">
-                          <ul class="menu menu-horizontal px-1">
-                            <li><a href="index.html" class="text-xl">Home</a></li>
-                            <li><a class="text-xl">Causes</a></li>
-                            <li><a href="./src/about.html" class="text-xl">About</a></li>
-                            <li><a href="" class="text-xl">Contact</a></li>
-                            <li>
-                              <details>
-                                <summary class="text-xl">Pages</summary>
-                                <ul class="p-2 bg-pur-100">
-                                  <li><a class="text-xl">Submenu</a></li>
-                                  <li><a class="text-xl">Submenu</a></li>
-                                </ul>
-                              </details>
-                            </li>
+      <section>
+        <div class="w-full lg:h-[117px] h-[62px] bg-pur-300">
+          <div class="container mx-auto h-full flex items-center">
+            <div class="navbar bg-transparent text-black">
+              <div
+                class="navbar-start flex items-center gap-36 justify-between"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6673fa17555f6d6497f5f466_charityflow.svg"
+                  alt=""
+                  class="h-[40px]"
+                />
+                <label
+                  for="my-drawer-4"
+                  class="btn btn-circle drawer-button lg:hidden swap swap-rotate"
+                >
+                  <!-- this hidden checkbox controls the state -->
+                  <input type="checkbox" />
+
+                  <!-- hamburger icon -->
+                  <svg
+                    class="swap-off fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                    ></path>
+                  </svg>
+
+                  <!-- close icon -->
+                  <svg
+                    class="swap-on fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 512 512"
+                  >
+                    <polygon
+                      points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                    ></polygon>
+                  </svg>
+                </label>
+
+                <div class="drawer h-[100px] drawer-end lg:hidden relative">
+                  <input
+                    id="my-drawer-4"
+                    type="checkbox"
+                    class="drawer-toggle"
+                  />
+                  <div class="drawer-side">
+                    <label
+                      for="my-drawer-4"
+                      aria-label="close sidebar"
+                      class="drawer-overlay"
+                    ></label>
+
+                    <!-- Sidebar content here -->
+                    <ul
+                      class="menu bg-white text-black rounded-box w-56 absolute top-40"
+                    >
+                      <li><a href="index.html">Home</a></li>
+                      <li><a>Cause</a></li>
+                      <li><a href="">About</a></li>
+                      <li><a>Contact</a></li>
+                      <li>
+                        <details open="">
+                          <summary>Pages</summary>
+                          <ul>
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
                           </ul>
-                        </div>
-                        <div class="navbar-end">
-                          <a class="btn hidden 2xl:flex text-lg h-[60px] text-pur-200 w-[200px] z-50 rounded-full">Donate Now</a>
-                        </div>
+                        </details>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a href="index.html" class="text-xl">Home</a></li>
+                  <li><a class="text-xl">Causes</a></li>
+                  <li><a href="./src/about.html" class="text-xl">About</a></li>
+                  <li><a href="" class="text-xl">Contact</a></li>
+                  <li>
+                    <details>
+                      <summary class="text-xl">Pages</summary>
+                      <ul class="p-2 bg-pur-100">
+                        <li><a class="text-xl">Submenu</a></li>
+                        <li><a class="text-xl">Submenu</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <a
+                  class="btn hidden 2xl:flex text-lg h-[60px] text-pur-200 w-[200px] z-50 rounded-full"
+                  >Donate Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="lg:h-[1066px] w-full bg-pur-200 h-[875px] pt-[50px] lg:pt-[120px]"
+        >
+          <div
+            class="container mx-auto h-full flex flex-col items-center justify-between"
+          >
+            <h1
+              class="lg:w-[1340px] h-[132px] lg:h-[192px] text-[32px] lg:text-[77px] font-bold text-white leading-[1.2em] text-center"
+            >
+              Welcome to our purpose of making the world brighter, together
+            </h1>
+            <div
+              class="lg:w-[1340px] h-[662px] lg:h-[654px] flex flex-col lg:flex-row justify-between lg:pb-0 pb-[70px]"
+            >
+              <div
+                class="lg:h-[774px] h-[250px] lg:w-[645px] rounded-xl overflow-hidden"
+              >
+                <img
+                  src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597c1d88bbf1e88da25c1a_about-image-05-p-800.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="lg:h-full h-[300px] lg:w-[583px] flex flex-col items-start gap-10"
+              >
+                <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
+                  <h5 class="text-white text-[25px] lg:text-[54px] font-bold">
+                    140<span class="text-pur-100">+</span>
+                  </h5>
+                  <p class="text-white text-[15px] lg:text-[17px] font-bold">
+                    This month, we are thrilled to welcome a wonderful group of
+                    volunteers to our team.
+                  </p>
+                </div>
+                <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
+                  <h5 class="text-white text-[25px] lg:text-[54px] font-bold">
+                    20<span class="text-pur-100">K</span>
+                  </h5>
+                  <p class="text-white text-[15px] lg:text-[17px] font-bold">
+                    Our new volunteers have made a remarkable human impact this
+                    month.
+                  </p>
+                </div>
+                <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
+                  <h5 class="text-white text-[25px] lg:text-[54px] font-bold">
+                    62
+                  </h5>
+                  <p class="text-white text-[15px] lg:text-[17px] font-bold">
+                    The dedication of our volunteers has been extraordinary,
+                    resulting in numerous lives saved through their efforts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w-full lg:h-[1622px] h-[1213px] py-[50px] bg-pur-300 lg:py-[150px]">
+          <div
+            class="container mx-auto h-full flex items-center justify-center"
+          >
+            <div class="lg:w-[1340px] h-[1113px] lg:h-full flex lg:flex-row flex-col items-start justify-between lg:mt-[150px]">
+              <div class="lg:w-[630px] h-[328px] lg:h-[310px] lg:sticky lg:top-[100px] flex flex-col justify-between lg:gap-0 gap-[10px]">
+                <h2 class="lg:text-[54px] text-[30px] font-bold leading-[1.2em]">
+                  The mission of our organization
+                </h2>
+                <p class="lg:text-[18px] text-[18px] lg:w-[535px] text-gray-600 lg:leading-[1.5em] lg:mt-3">
+                  Explore our diverse range of programs and initiatives aimed at
+                  fostering positive change and making a tangible impact in
+                  communities worldwide.
+                </p>
+                <div
+                  class="flex lg:flex-row flex-col lg:mt-5 lg:gap-0 gap-3 lg:items-center lg:justify-center justify-between lg:pr-[100px]"
+                >
+                  <div
+                    class="avatar-group -space-x-4 w-[192px] rtl:space-x-reverse"
+                  >
+                    <div class="avatar border-none">
+                      <div class="w-12">
+                        <img
+                          src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66543639d18242f8e413b4bf_avatar-04.webp"
+                        />
                       </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="lg:h-[1066px] w-full bg-pur-200 h-[875px] pt-[50px] lg:pt-[120px]">
-                <div class="container mx-auto h-full flex flex-col items-center justify-between">
-                    <h1 class="lg:w-[1340px] h-[132px] lg:h-[192px] text-[32px] lg:text-[77px] font-bold text-white leading-[1.2em] text-center">Welcome to our purpose of making the world brighter, together</h1>
-                    <div class="lg:w-[1340px] h-[662px] lg:h-[654px] flex flex-col lg:flex-row justify-between lg:pb-0 pb-[70px]">
-                        <div class="lg:h-[774px] h-[250px] lg:w-[645px] rounded-xl overflow-hidden">
-                            <img src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597c1d88bbf1e88da25c1a_about-image-05-p-800.jpg" alt="">
-                        </div>
-                        <div class="lg:h-full h-[300px] lg:w-[583px] flex flex-col items-start gap-10">
-                            <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
-                                <h5 class="text-white text-[25px] lg:text-[54px] font-bold">140<span class="text-pur-100">+</span></h5>
-                                <p class="text-white  text-[15px]  lg:text-[17px] font-bold">This month, we are thrilled to welcome a wonderful group of volunteers to our team.</p>
-                            </div>
-                            <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
-                                <h5 class="text-white text-[25px]  lg:text-[54px] font-bold">20<span class="text-pur-100">K</span></h5>
-                                <p class="text-white text-[15px]  lg:text-[17px] font-bold">Our new volunteers have made a remarkable human impact this month.</p>
-                            </div>
-                            <div class="lg:w-[483px] lg:h-[131px] h-[83px]">
-                                <h5 class="text-white text-[25px]  lg:text-[54px] font-bold">62</h5>
-                                <p class="text-white   text-[15px] lg:text-[17px] font-bold">The dedication of our volunteers has been extraordinary, resulting in numerous lives saved through their efforts.</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="w-full lg:h-[1622px] bg-pur-300 lg:py-[150px]">
-                <div class="container mx-auto h-full">
-                    <div class="border border-black w-full h-full">
-
+                    <div class="avatar border-none">
+                      <div class="w-12">
+                        <img
+                          src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6654363ab8c787026dc6c4f9_avatar-05.webp"
+                        />
+                      </div>
                     </div>
+                    <div class="avatar border-none">
+                      <div class="w-12">
+                        <img
+                          src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6654363a02e8c01ca0eb2705_avatar-06.webp"
+                        />
+                      </div>
+                    </div>
+                    <div class="avatar placeholder border-none">
+                      <div class="bg-neutral text-neutral-content w-12">
+                        <span>+99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-[18px] lg:flex lg:flex-row items-center font-200 text-gray-600 leading-[1.5em] w-[350px] h-[88px]"
+                  >
+                  More than 5 million people helped our community
+                  </p>
                 </div>
+              </div>
+              <div class="lg:w-[630px] h-[755px] lg:h-full flex flex-col justify-between">
+                <div class="bg-white rounded-3xl lg:w-full lg:h-[300px] lg:p-[40px] flex flex-col items-start justify-between lg:sticky lg:top-[100px] w-full h-[179px] p-[15px]">
+                  <img class="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597c807a086b27880e8cf4_icon-25.svg" alt="">
+                  <h6 class="lg:text-[30px] font-bold text-[19px]">Education and training program</h6>
+                  <p class="lg:text-[19px] text-gray-600 text-[14px] lg:leading-[1.5em]">Our Education and Training Program is designed to equip individuals with the knowledge, skills, and opportunities they need to thrive.</p>
+                </div>
+                <div class="bg-white rounded-3xl lg:w-full lg:h-[300px] lg:p-[40px] flex flex-col items-start justify-between  lg:sticky top-[100px] w-full h-[179px] p-[15px] z-30">
+                  <img class="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597cb6be5c6e445953c309_icon-26.svg" alt="">
+                  <h6 class="lg:text-[30px] font-bold text-[19px]">Promoting wellness and security</h6>
+                  <p class="lg:text-[19px] text-gray-600 text-[14px] lg:leading-[1.5em]">Involves fostering a holistic approach to health and safety, encompassing physical, mental, and emotional well-being while ensuring a secure environment.</p>
+                </div>
+                <div class="bg-white rounded-3xl lg:w-full lg:h-[300px] lg:p-[40px] flex flex-col items-start justify-between lg:sticky top-[100px] w-full h-[179px] p-[15px] z-40">
+                  <img class="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597cb70641d4cf76ec1f6a_icon-28.svg" alt="">
+                  <h6 class="lg:text-[30px] font-bold text-[19px]">Responding swiftly to disasters</h6>
+                  <p class="lg:text-[19px] text-gray-600 text-[14px] lg:leading-[1.5em]">Entails immediate and effective action to address and mitigate the impacts of natural or man-made catastrophes.</p>
+                </div>
+                <div class="bg-white rounded-3xl lg:w-full lg:h-[300px] lg:p-[40px] flex flex-col items-start justify-between lg:sticky top-[100px] w-full h-[179px] p-[15px] z-50">
+                  <img class="lg:w-[70px] lg:h-[70px] w-[40px] h-[40px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/66597cb6703535bf2a5f8067_icon-27.svg" alt="">
+                  <h6 class="lg:text-[30px] font-bold text-[19px]">Brighter tomorrow</h6>
+                  <p class="lg:text-[19px] text-gray-600 text-[14px] lg:leading-[1.5em]">Refers to a hopeful and optimistic vision for the future, characterized by positive changes and improvements in various aspects of life.</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w-full lg:h-[970px] bg-pur-300 lg:p-[100px] h-[1605px]">
+          <div class="container mx-auto h-full">
+            <div class="lg:w-full lg:h-full flex flex-col items-center justify-between">
+              <div class="w-full lg:h-[105px] flex flex-col items-center justify-between lg:mb-0 mb-5">
+                <h3 class="lg:text-[54px] text-[30px] font-bold">Our volunteers</h3>
+                <p class="text-[16px] text-center lg:text-[18px] leading-[1.5em]">If you're dedicated to making a real difference, think about volunteering with CharityFlow.</p>
+              </div>
+              <div class="w-full lg:h-[515px] h-[1423px] flex lg:flex-row flex-col justify-between">
+
+                <div class=" lg:h-full h-[461px] lg:w-[430px] flex flex-col justify-between">
+
+                  <div class="w-full lg:w-[430px] lg:h-[430px] h-[430px] rounded-3xl overflow-hidden relative group">
+                    <img class="z-0 lg:w-[430px] lg:h-full" src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6655b17201bc5ce0065948e1_volunteer-01.webp" alt="">
+                    <div class="w-full lg:h-[30px] absolute group-hover:-translate-y-[40px] duration-300 translate-y-[20px] px-[20px] flex gap-4">
+                      <a href="https://www.facebook.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f274368920538269d3fa8_facebook.svg" alt="">
+                      </a>
+                      <a href="https://twitter.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f2744b8f1edef1f181bb4_twitter.svg" alt="">
+                      </a>
+                      <a href="https://www.linkedin.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f27433ca3cdd172c4a0bc_linkedin.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="w-full lg:h-[65px]">
+                    <h5 class="lg:text-[26px] text-[20px] font-bold">Dennis Barrett</h5>
+                    <p>Founder & CEO</p>
+                  </div>
+
+                </div>
+
+                <div class=" lg:h-full h-[461px] lg:w-[430px] flex flex-col justify-between">
+
+                  <div class="w-full lg:w-[430px] lg:h-[430px] h-[430px] rounded-3xl overflow-hidden relative group">
+                    <img class="z-0 lg:w-[430px] lg:h-full" src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6655b18c2bdbaa2d058a17d3_volunteer-02.webp" alt="">
+                    <div class="w-full lg:h-[30px] absolute group-hover:-translate-y-[40px] duration-300 translate-y-[20px] px-[20px] flex gap-4">
+                      <a href="https://www.facebook.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f274368920538269d3fa8_facebook.svg" alt="">
+                      </a>
+                      <a href="https://twitter.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f2744b8f1edef1f181bb4_twitter.svg" alt="">
+                      </a>
+                      <a href="https://www.linkedin.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f27433ca3cdd172c4a0bc_linkedin.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="w-full lg:h-[65px]">
+                    <h5 class="lg:text-[26px] text-[20px] font-bold">Bryan Knight</h5>
+                    <p>Director of operations</p>
+                  </div>
+
+                </div>
+
+                <div class=" lg:h-full h-[461px] lg:w-[430px] flex flex-col justify-between">
+
+                  <div class="w-full lg:w-[430px] lg:h-[430px] h-[430px] rounded-3xl overflow-hidden relative group">
+                    <img class="z-0 lg:w-[430px] lg:h-full" src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6655b19ed18936badf26f362_volunteer-03.webp" alt="">
+                    <div class="w-full lg:h-[30px] absolute group-hover:-translate-y-[40px] duration-300 translate-y-[20px] px-[20px] flex gap-4">
+                      <a href="https://www.facebook.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f274368920538269d3fa8_facebook.svg" alt="">
+                      </a>
+                      <a href="https://twitter.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f2744b8f1edef1f181bb4_twitter.svg" alt="">
+                      </a>
+                      <a href="https://www.linkedin.com/" class="">
+                        <img class="w-[30px] h-[30px] hover:bg-pur-100 active:scale-90 bg-pur-200 rounded-md p-[6px]" src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/664f27433ca3cdd172c4a0bc_linkedin.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="w-full lg:h-[65px]">
+                    <h5 class="lg:text-[26px] text-[20px] font-bold">Dennis Barrett</h5>
+                    <p>Manager</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-</body> 
+  </body>
 </html>
