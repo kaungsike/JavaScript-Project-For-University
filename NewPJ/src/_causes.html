@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <section>
+      <div class="w-full lg:h-[117px] h-[62px] bg-pur-300">
+        <div class="container mx-auto h-full flex items-center">
+          <div class="navbar bg-transparent text-black">
+            <div class="navbar-start flex items-center gap-36 justify-between">
+              <img
+                src="https://cdn.prod.website-files.com/664f0b83318c54d5618a0d0d/6673fa17555f6d6497f5f466_charityflow.svg"
+                alt=""
+                class="h-[40px]"
+              />
+              <label
+                for="my-drawer-4"
+                class="btn btn-circle drawer-button lg:hidden swap swap-rotate"
+              >
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" />
+
+                <!-- hamburger icon -->
+                <svg
+                  class="swap-off fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                  ></path>
+                </svg>
+
+                <!-- close icon -->
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 512 512"
+                >
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                  ></polygon>
+                </svg>
+              </label>
+
+              <div class="drawer h-[100px] drawer-end lg:hidden relative">
+                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-side">
+                  <label
+                    for="my-drawer-4"
+                    aria-label="close sidebar"
+                    class="drawer-overlay"
+                  ></label>
+
+                  <!-- Sidebar content here -->
+                  <ul
+                    class="menu bg-white text-black rounded-box w-56 absolute top-40"
+                  >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./_causes.html">Cause</a></li>
+                    <li><a href="./_about.html">About</a></li>
+                    <li><a href="./_contact.html">Contact</a></li>
+                    <li>
+                      <details open="">
+                        <summary>Pages</summary>
+                        <ul>
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html" class="text-xl">Home</a></li>
+                <li><a href="./_causes.html" class="text-xl">Causes</a></li>
+                <li><a href="./_about.html" class="text-xl">About</a></li>
+                <li><a href="./_contact.html" class="text-xl">Contact</a></li>
+                <li>
+                  <details>
+                    <summary class="text-xl">Pages</summary>
+                    <ul class="p-2 bg-pur-100">
+                      <li><a class="text-xl">Submenu</a></li>
+                      <li><a class="text-xl">Submenu</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a
+                class="btn hidden 2xl:flex bg-yy-100 hover:bg-pur-100 hover:text-white text-lg h-[60px] text-pur-200 w-[200px] z-50 rounded-full"
+                >Donate Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full lg:h-[202px] h-[128px] bg-pur-300 pt-[30px]">
+        <div class="container h-full mx-auto">
+          <div
+            class="w-full flex rounded-2xl items-center justify-center bg-yy-100 lg:rounded-3xl h-full"
+          >
+            <h2 class="lg:text-[58px] text-[30px] font-bold text-black">
+              Our cases
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="w-full lg:h-[1658px] lg:pt-[50px] h-[3650px] pt-[30px] pb-[50px] bg-pur-300 lg:pb-[150px]"
+      >
+        <div class="container mx-auto h-full">
+          <div
+            class="w-full h-full grid lg:grid-cols-3 grid-cols-1 lg:gap-x-[28px] lg:gap-y-[35px] gap-[15px]"
+          >
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/665069a7d1c65298bd3f5e69_causes-image-01-p-500.webp"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Help children raise out of poverty
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Empower children to break the cycle of poverty with education,
+                support.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">60%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="60"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$28,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$16,800</p>
+                </div>
+              </div>
+              <button
+                class="w-full h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/66518de99710a26a06a384e0_causes-image-02.webp"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Feed healthy meals to rural children
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Help us deliver nutritious, balanced meals to children in rural
+                areas.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">80%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="80"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$40,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$32,000</p>
+                </div>
+              </div>
+              <button
+                class="w-full h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6651a3863b6a8020c7af88f0_causes-image-03.webp"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Access to medicine and research support
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Support our mission to enhance healthcare access and funding.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">50%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="50"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$50,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$25,800</p>
+                </div>
+              </div>
+              <button
+                class="w-full h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6651a3f51ae548613a8ea18d_causes-image-04.webp"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Raise awareness about environmental issues
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Highlighting key environmental issues to foster action.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">100%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="100"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$27,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$27,000</p>
+                </div>
+              </div>
+              <button
+                disabled
+                class="w-full opacity-35 h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/6651a43d198d4b60bcb7954f_causes-image-05.webp"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Paving the way for women's empowerment
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Trace the journey of empowerment, where obstacles fade and
+                opportunities flourish.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">90%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="90"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$95,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$85,500</p>
+                </div>
+              </div>
+              <button
+                class="w-full h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+
+            <div
+              class="lg:h-[703px] h-[560px] lg:w-[488px] bg-white rounded-2xl lg:p-[20px] flex flex-col justify-between p-[15px]"
+            >
+              <img
+                class="lg:h-[353px] rounded-xl h-[264px]"
+                src="https://cdn.prod.website-files.com/66503ca26bc00ed2f299b420/665069afd701281fe03ab887_causes-image-06.jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] font-bold leading-[1.3em]">
+                Securing clean water access for every home
+              </h4>
+              <p class="lg:text-[17px] leading-[1.5em]">
+                Inspire change by highlighting critical environmental issues and
+                promoting sustainable actions.
+              </p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="text-[18px] text-pur-200">40%</p>
+                <progress
+                  class="progress h-[5px] w-full"
+                  value="40"
+                  max="100"
+                ></progress>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[14px] text-gray-500">Goal</p>
+                  <p class="text-[22px] text-pur-200 font-bold">$65,000</p>
+                </div>
+                <div>
+                  <p class="text-[14px] text-gray-500">Raised money</p>
+                  <p class="text-[22px] text-pur-100 font-bold">$26,000</p>
+                </div>
+              </div>
+              <button
+                class="w-full h-[46px] rounded-full text-[18px] font-bold active:scale-95 duration-150 lg:h-[57px] bg-yy-100 text-pur-200"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-full bg-bb-100 lg:pt-[50px]">
+        <div class="container mx-auto h-full">
+          <footer class="footer bg-bb-100 p-10 text-white">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+          <footer
+            class="footer bg-bb-100 text-white border-base-300 border-t px-10 py-4"
+          >
+            <aside class="grid-flow-col items-center">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                class="fill-current"
+              >
+                <path
+                  d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+                ></path>
+              </svg>
+              <p>
+                ACME Industries Ltd.
+                <br />
+                Providing reliable tech since 1992
+              </p>
+            </aside>
+            <nav class="md:place-self-center md:justify-self-end">
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    ></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    ></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
