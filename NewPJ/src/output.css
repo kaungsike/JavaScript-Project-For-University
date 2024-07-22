@@ -2756,14 +2756,6 @@ html:has(.drawer-toggle:checked){
   margin-top: auto;
 }
 
-.mt-\[\]{
-  margin-top: ;
-}
-
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-
 .line-clamp-1{
   overflow: hidden;
   display: -webkit-box;
@@ -2798,10 +2790,6 @@ html:has(.drawer-toggle:checked){
 .size-6{
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.h-\[10000px\]{
-  height: 10000px;
 }
 
 .h-\[100px\]{
@@ -2974,6 +2962,10 @@ html:has(.drawer-toggle:checked){
 
 .h-\[305px\]{
   height: 305px;
+}
+
+.h-\[307px\]{
+  height: 307px;
 }
 
 .h-\[30px\]{
@@ -3170,14 +3162,6 @@ html:has(.drawer-toggle:checked){
 
 .h-full{
   height: 100%;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[307px\]{
-  height: 307px;
 }
 
 .w-12{
@@ -3774,6 +3758,10 @@ html:has(.drawer-toggle:checked){
   font-size: 25px;
 }
 
+.text-\[26px\]{
+  font-size: 26px;
+}
+
 .text-\[28px\]{
   font-size: 28px;
 }
@@ -3815,14 +3803,6 @@ html:has(.drawer-toggle:checked){
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[27px\]{
-  font-size: 27px;
-}
-
-.text-\[26px\]{
-  font-size: 26px;
 }
 
 .font-\[700\]{
@@ -3905,10 +3885,6 @@ html:has(.drawer-toggle:checked){
 .text-yy-100{
   --tw-text-opacity: 1;
   color: rgb(255 209 102 / var(--tw-text-opacity));
-}
-
-.text-\[\]{
-  color: ;
 }
 
 .underline{
@@ -4181,18 +4157,6 @@ html:has(.drawer-toggle:checked){
     margin-top: 80px;
   }
 
-  .lg\:mt-\[\]{
-    margin-top: ;
-  }
-
-  .lg\:mt-\[10px\]{
-    margin-top: 10px;
-  }
-
-  .lg\:mt-\[25px\]{
-    margin-top: 25px;
-  }
-
   .lg\:block{
     display: block;
   }
@@ -4265,10 +4229,6 @@ html:has(.drawer-toggle:checked){
     height: 1431px;
   }
 
-  .lg\:h-\[145px\]{
-    height: 145px;
-  }
-
   .lg\:h-\[150px\]{
     height: 150px;
   }
@@ -4283,6 +4243,10 @@ html:has(.drawer-toggle:checked){
 
   .lg\:h-\[172px\]{
     height: 172px;
+  }
+
+  .lg\:h-\[175px\]{
+    height: 175px;
   }
 
   .lg\:h-\[1845px\]{
@@ -4523,10 +4487,6 @@ html:has(.drawer-toggle:checked){
 
   .lg\:h-full{
     height: 100%;
-  }
-
-  .lg\:h-\[175px\]{
-    height: 175px;
   }
 
   .lg\:w-\[100px\]{
