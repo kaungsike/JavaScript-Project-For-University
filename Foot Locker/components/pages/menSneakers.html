@@ -117,14 +117,14 @@
             <button>Color</button>
           </div>
           <div id="productCardGroup" class="product-container">
-              <!-- append product template -->
+            <!-- append product template -->
           </div>
         </div>
       </section>
     </main>
 
     <template id="cardTemplate">
-      <div class="product-card">
+      <div id="productCard" class="product-card">
         <div class="header">
           <button>
             <svg
@@ -144,25 +144,11 @@
           </button>
         </div>
         <div class="body">
-          <img id="product-img"
-            src="https://images.footlocker.com/is/image/EBFL2/N09QC6BT?wid=250&hei=250"
-            alt=""
-          />
+          <img id="product-img" src="" alt="" />
         </div>
         <div class="footer">
-          <div class="img-container">
-            <img
-              src="https://images.footlocker.com/is/image/EBFL2/N09QC6BT?wid=35&hei=35"
-              alt=""
-            />
-            <img
-              src="https://images.footlocker.com/is/image/EBFL2/N0009QC6?wid=35&hei=35"
-              alt=""
-            />
-            <img
-              src="https://images.footlocker.com/is/image/EBFL2/9QCNWD?wid=35&hei=35"
-              alt=""
-            />
+          <div id="minImgGroup" class="img-container">
+            <!-- Append with template by loop in card.js with the inner function of  createProductCard call createMinImg function-->
           </div>
           <h4>Vans Knu Skool</h4>
           <div class="star-container">
@@ -224,12 +210,15 @@
           </div>
           <p class="gender">Men's</p>
           <p class="color">Black / True White</p>
-          <p> $ <span class="price">75.00</span></p>
+          <p>$ <span class="price">75.00</span></p>
         </div>
       </div>
+    </template>
+
+    <template id="minImgTemplate">
+        <img class="min-img" src="" alt="" />
     </template>
   </body>
 
   <script type="module" src="../main.js"></script>
-
 </html>

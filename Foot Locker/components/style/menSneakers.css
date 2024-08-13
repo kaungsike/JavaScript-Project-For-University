@@ -186,10 +186,13 @@
                         height: 44px;
                         display: flex;
                         align-items: center;
-                        
                         img{
                             width: 36px;
                             margin-left: 15px;
+                        }
+                        img:active{
+                            transform: scale(90%);
+                            transition-duration: 150ms;
                         }
                     }
                     h4{
