@@ -189,6 +189,8 @@
                         img{
                             width: 36px;
                             margin-left: 15px;
+                            position: relative;
+                            z-index: 100;
                         }
                         img:active{
                             transform: scale(90%);

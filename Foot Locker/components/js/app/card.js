@@ -11,6 +11,9 @@ export const createProductCard = (data) => {
   template.querySelector("#name").innerText = data.name;
   template.querySelector("#color").innerText = data.color;
   template.querySelector("#price").innerText = data.price;
+
+  template.querySelector("#productCard").setAttribute("href","../pages/productDetail.html#"+data.id+"#"+data.id)
+
   const group = template.querySelector("#minImgGroup");
 
   data.product.forEach((el) => {
@@ -34,7 +37,9 @@ export const createMinImg = (product) => {
 
 export const createProductCardRender = (products) => {
   products.forEach((product) => {
-    productCardGroup.append(createProductCard(product));
+    if(productCardGroup!=null){
+      productCardGroup.append(createProductCard(product));
+    }
   });
 };
 

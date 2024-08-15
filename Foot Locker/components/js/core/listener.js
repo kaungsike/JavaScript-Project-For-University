@@ -3,7 +3,9 @@ import { productCardGroup } from "./selectors.js";
 
 
 const listener = () => {
-    productCardGroup.addEventListener('click',handleProductCardMinImg)
+   if(productCardGroup!=null){
+    productCardGroup.addEventListener("click",handleProductCardMinImg)
+   }
 }
 
 export default listener;
