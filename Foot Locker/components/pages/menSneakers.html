@@ -124,7 +124,7 @@
     </main>
 
     <template id="cardTemplate">
-      <a style="text-decoration: none;color: black;" id="productCard" class="product-card">
+      <div index="0" style="text-decoration: none;color: black;" id="productCard" class="product-card">
         <div class="header">
           <button>
             <svg
@@ -143,14 +143,15 @@
             </svg>
           </button>
         </div>
-        <div class="body">
+        <a class="body" href="../pages/productDetail.html#">
           <img id="product-img" src="" alt="" />
-        </div>
+        </a >
         <div class="footer">
           <div id="minImgGroup" class="img-container">
             <!-- Append with template by loop in card.js with the inner function of  createProductCard call createMinImg function-->
           </div>
-          <h4 class="name" id="name">Vans Knu Skool</h4>
+          <a style="color: black;text-decoration: none;" class="forFooter" >
+            <h4 class="name" id="name">Vans Knu Skool</h4>
           <div class="star-container">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,8 +212,9 @@
           <p class="gender" id="gender"></p>
           <p class="color" id="color">Black / True White</p>
           <p>$ <span class="price" id="price">75.00</span></p>
+          </a>
         </div>
-      </a>
+      </div>
     </template>
 
     <template id="minImgTemplate">

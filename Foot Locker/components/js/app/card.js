@@ -6,18 +6,35 @@ import {
 
 export const createProductCard = (data) => {
   const template = cardTemplate.content.cloneNode(true);
+
+  template.querySelector("#productCard").setAttribute("index",data.id)
   template.querySelector("#product-img").src = data.img;
   template.querySelector("#gender").innerText = data.gender;
   template.querySelector("#name").innerText = data.name;
   template.querySelector("#color").innerText = data.color;
   template.querySelector("#price").innerText = data.price;
 
-  template.querySelector("#productCard").setAttribute("href","../pages/productDetail.html#"+data.id+"#"+data.id)
-
   const group = template.querySelector("#minImgGroup");
+
+  template.querySelector(".body").setAttribute("href","../pages/productDetail.html#"+data.id+"#0")
+  template.querySelector(".forFooter").setAttribute("href","../pages/productDetail.html#"+data.id+"#0")
+
+
+  
 
   data.product.forEach((el) => {
     group.append(createMinImg(el));
+
+    let indexNumber = 0;
+
+    const minImg = group.querySelectorAll(".min-img");
+
+    minImg.forEach((img) => {
+      img.setAttribute("index",indexNumber)
+      ++indexNumber;
+    })
+
+
   });
 
   return template;
@@ -26,6 +43,7 @@ export const createProductCard = (data) => {
 };
 
 export const createMinImg = (product) => {
+
   const template = minImgTemplate.content.cloneNode(true);
   template.querySelector(".min-img").src = product.img;
   template.querySelector(".min-img").setAttribute("price",product.price);
@@ -33,6 +51,10 @@ export const createMinImg = (product) => {
 
   return template;
 };
+
+// export const increaseIndexNumberOfCategoryImg = () => {
+
+// }
 
 
 export const createProductCardRender = (products) => {
@@ -60,5 +82,7 @@ export const handleProductCardMinImg = (e) => {
         color.innerText = e.target.closest(".min-img").getAttribute("color");
         price.innerText = e.target.closest(".min-img").getAttribute("price");
 
+        card.querySelector(".body").setAttribute("href","../pages/productDetail.html#"+card.getAttribute("index")+"#"+e.target.closest(".min-img").getAttribute("index"));
+        card.querySelector(".forFooter").setAttribute("href","../pages/productDetail.html#"+card.getAttribute("index")+"#"+e.target.closest(".min-img").getAttribute("index"))
     }
 }

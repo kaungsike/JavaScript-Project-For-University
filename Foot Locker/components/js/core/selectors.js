@@ -1,7 +1,11 @@
 export const cardTemplate = document.querySelector("#cardTemplate");
 export const minImgTemplate = document.querySelector("#minImgTemplate");
-export const productDetailTemplate = document.querySelector("#productDetailTemplate"); // in productDetail.html
+// in productDetail.html 1st template
+export const productDetailTemplate = document.querySelector("#productDetailTemplate"); 
 export const categoryImgTemplate = document.querySelector("#categoryImgTemplate");
+// in product detail.html 3rd template
+export const mainCategoryImgTemplate = document.querySelector("#mainCategoryImgTemplate");
+
 
 
 export const productCardGroup = document.querySelector("#productCardGroup")

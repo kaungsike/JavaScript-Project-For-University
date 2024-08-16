@@ -322,6 +322,8 @@
         </div> -->
       </section>
 
+      <!-- main template for product details -->
+      <!-- it function is in detail.js line 4 createProductDetail () -->
       <template id="productDetailTemplate">
         <div id="productDetail" class="section-1-container container">
           <div class="first-side-container">
@@ -463,13 +465,13 @@
             <a class="link" href="">Explore Nike</a>
             <p class="price">$ <span>115.00</span></p>
             <p class="color">White / White</p>
-            <div class="category-img-container">
-                <button>
+            <div class="category-img-container" id="mainCategoryImgGroup">
+                <!-- <button>
                     <img src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=200&hei=200&fmt=png-alpha" alt="">
                 </button>
                 <button>
                     <img src="https://images.footlocker.com/is/image/EBFL2/D2739100?wid=200&hei=200&fmt=png-alpha" alt="">
-                </button>
+                </button> -->
             </div>
             <p class="size">Choose a size</p>
             <div class="size-box-container">
@@ -547,6 +549,8 @@
         </div>
       </template>
 
+      <!-- template for first side of product detail categories img -->
+      <!-- it function is in detail.js line 17 createCategoryImg () -->
       <template id="categoryImgTemplate">
         <button>
           <img id="categoryImg"
@@ -554,6 +558,13 @@
             alt=""
           />
         </button>
+      </template>
+
+      <!-- template for product detail second side for category img -->
+      <template id="mainCategoryImgTemplate">
+        <button>
+          <img class="mainCategoryImg" src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=200&hei=200&fmt=png-alpha" alt="">
+      </button>
       </template>
 
     </main>

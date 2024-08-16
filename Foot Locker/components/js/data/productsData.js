@@ -8,167 +8,470 @@ const products = [
         rating : 4.2,
         product : [
             {
-                id : 0,
                 img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT?wid=250&hei=250',
                 color : 'Black / True White',
                 price : 75.00,
-                productDetailInfo : {
-                    img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha',
-                    categoryImg : [
-                        {
-                            img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha'
-                        },
-                        {
-                            img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a2?wid=581&hei=581&fmt=png-alpha'
-                        },
-                        {
-                            img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a3?wid=581&hei=581&fmt=png-alpha'
-                        },
-                        {
-                            img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a4?wid=581&hei=581&fmt=png-alpha'
-                        },
-                        {
-                            img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a5?wid=581&hei=581&fmt=png-alpha'
-                        }
-                    ]
-                }
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+                // productDetailInfo : {
+                //     img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha',
+                //     categoryImg : [
+                //         {
+                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha'
+                //         },
+                //         {
+                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a2?wid=581&hei=581&fmt=png-alpha'
+                //         },
+                //         {
+                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a3?wid=581&hei=581&fmt=png-alpha'
+                //         },
+                //         {
+                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a4?wid=581&hei=581&fmt=png-alpha'
+                //         },
+                //         {
+                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a5?wid=581&hei=581&fmt=png-alpha'
+                //         }
+                //     ]
+                // }
             },
             {
-                id : 1,
                 img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6?wid=250&hei=250',
                 color : 'Black / Red / White',
                 price : 75.00,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_01?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
             },
             {
-                id : 2,
                 img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD?wid=250&hei=250',
                 color : 'Navy / White',
                 price : 75.00,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
             },
             {
-                id : 3,
                 img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS?wid=250&hei=250',
                 color : 'Yellow / Brown',
                 price : 80.00,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
             }
-        ],
-        
+        ],  
     },
-    // {
-    //     id : 2,
-    //     img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141?wid=250&hei=250',
-    //     name : 'Jordan Retro 4',
-    //     gender : "Boys' Preschool",
-    //     color : 'Off White / Military Blue / Neutral Grey',
-    //     price : 100,
-    //     rating : 4.6,
-    //     product : [
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141?wid=250&hei=250',
-    //             color : 'Off White / Military Blue / Neutral Grey',
-    //             price : '100',
-    //         },
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=250&hei=250',
-    //             color : 'White',
-    //             price : '100',
-    //         }
-    //     ]
-    // },
-    // {
-    //     id : 3,
-    //     img : 'https://images.footlocker.com/is/image/EBFL2/Q8180400?wid=250&hei=250',
-    //     name : 'Nike KD IV Nerf',
-    //     gender : "Men's",
-    //     color : 'Purple / Black / Red',
-    //     price : 150,
-    //     rating : 3.5,
-    //     product : [
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/Q8180400?wid=250&hei=250',
-    //             color : 'Purple / Black / Red',
-    //             price : 150,
-    //         }
-    //     ]
-    // },
-    // {
-    //     id : 4,
-    //     img : 'https://images.footlocker.com/is/image/EBFL2/T8529112?wid=250&hei=250',
-    //     name : 'Jordan Retro 6',
-    //     gender : "Men's",
-    //     color : 'White / Navy / Red',
-    //     price : 200,
-    //     rating : 4.8,
-    //     product : [
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/T8529112?wid=250&hei=250',
-    //             color : 'White / Navy / Red',
-    //             price : 200,
-    //         },
-    //         {  
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/T8529170?wid=250&hei=250',
-    //             color : 'White / Yellow Ochre / Black',
-    //             price : 169.99,
-    //         },
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/T8529112?wid=250&hei=250',
-    //             color : 'White / Black',
-    //             price : 169.99,
-    //         }
-    //     ]
-    // },
-    // {
-    //     id : 5,
-    //     img : 'https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250',
-    //     name : "Nike Air Force 1 '07 LE",
-    //     gender : "Men's",
-    //     color : 'White / White',
-    //     price : 115,
-    //     rating : 4.9,
-    //     product : [
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250',
-    //             color : 'White / White',
-    //             price : 115,
-    //         },
-    //         {  
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/D2739100?wid=250&hei=250',
-    //             color : 'White / Brown / White',
-    //             price : 115,
-    //         }
-    //     ]
-    // },
-    // {
-    //     id : 6,
-    //     img : 'https://images.footlocker.com/is/image/EBFL2/98893005?wid=250&hei=250',
-    //     name : 'New Balance 9060',
-    //     gender : "Men's",
-    //     color : 'Black / Grey',
-    //     price : 150,
-    //     rating : 4.3,
-    //     product : [
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/98893005?wid=250&hei=250',
-    //             color : 'Black / Grey',
-    //             price : 150,
-    //         },
-    //         {  
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH?wid=250&hei=250',
-    //             color : 'Agate / Black / Rich Oak',
-    //             price : 150,
-    //         },
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA?wid=250&hei=250',
-    //             color : 'Blue / Purple',
-    //             price : 150,
-    //         },
-    //         {
-    //             img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD?wid=250&hei=250',
-    //             color : 'Teal / White / Sand',
-    //             price : 150,
-    //         }
-    //     ]
-    // },
+    {
+        id : 2,
+        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141?wid=250&hei=250',
+        name : 'Jordan Retro 4',
+        gender : "Boys' Preschool",
+        color : 'Off White / Military Blue / Neutral Grey',
+        price : 100,
+        rating : 4.6,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141?wid=250&hei=250',
+                color : 'Off White / Military Blue / Neutral Grey',
+                price : '100',
+                main_img : "https://images.footlocker.com/is/image/EBFL2/Q7669141_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=250&hei=250',
+                color : 'White',
+                price : '100',
+                main_img : "https://images.footlocker.com/is/image/EBFL2/Q7669103_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Q7669103_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            }
+        ]
+    },
+    {
+        id : 3,
+        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100?wid=250&hei=250',
+        name : "Nike Blazer Mid '77",
+        gender : "Women's",
+        color : 'Black / White / Sail',
+        price : 79.00,
+        rating : 3.5,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100?wid=250&hei=250',
+                color : 'Black / White / Sail',
+                price : 79.00,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117?wid=250&hei=250',
+                color : 'White / White',
+                price : 74.99,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/Z1055117_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            }
+        ]
+    },
+
+    {
+        id : 4,
+        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164?wid=250&hei=250',
+        name : 'Jordan Retro 6',
+        gender : "Men's",
+        color : 'White / Navy / Red',
+        price : 200,
+        rating : 4.8,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/T8529164?wid=250&hei=250',
+                color : 'White / Navy / Red',
+                price : 200,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/T8529164_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529164_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {  
+                img : 'https://images.footlocker.com/is/image/EBFL2/T8529170?wid=250&hei=250',
+                color : 'White / Yellow Ochre / Black',
+                price : 169.99,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529170_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/T8529112?wid=250&hei=250',
+                color : 'White / Black',
+                price : 169.99,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_01?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_03?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_04?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/T8529112_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            }
+        ]
+    },
+
+
+    {
+        id : 5,
+        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250',
+        name : "Nike Air Force 1 '07 LE",
+        gender : "Men's",
+        color : 'White / White',
+        price : 115,
+        rating : 4.9,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250',
+                color : 'White / White',
+                price : 115,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a5?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/W2288111_a6?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {  
+                img : 'https://images.footlocker.com/is/image/EBFL2/D2739100?wid=250&hei=250',
+                color : 'White / Brown / White',
+                price : 115,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/D2739100_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            }
+        ]
+    },
+
+    {
+        id : 6,
+        img : 'https://images.footlocker.com/is/image/EBFL2/98893005?wid=250&hei=250',
+        name : 'New Balance 9060',
+        gender : "Men's",
+        color : 'Black / Grey',
+        price : 150,
+        rating : 4.3,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/98893005?wid=250&hei=250',
+                color : 'Black / Grey',
+                price : 150,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/98893005_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {  
+                img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH?wid=250&hei=250',
+                color : 'Agate / Black / Rich Oak',
+                price : 150,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060NRH_a4?wid=581&hei=581&fmt=png-alpha'
+                    },
+
+                ],
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA?wid=250&hei=250',
+                color : 'Blue / Purple',
+                price : 150,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/U9060FA_a4?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD?wid=250&hei=250',
+                color : 'Teal / White / Sand',
+                price : 150,
+                main_img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD_a1?wid=581&hei=581&fmt=png-alpha',
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD_a3?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/9060ESD_a4?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ],
+            }
+        ]
+    },
+
     // {
     //     id : 7,
     //     img : 'https://images.footlocker.com/is/image/EBFL2/Z5485071?wid=250&hei=250',
