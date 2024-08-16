@@ -13,3 +13,4 @@ export const minImgGroup = document.querySelector("#minImgGroup")
 export const productDetailGroup = document.querySelector("#productDetailGroup")
 
 export const productCard = document.querySelector("#productCard")
+export const header = document.querySelector(".header")

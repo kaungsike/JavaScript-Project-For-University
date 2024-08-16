@@ -178,7 +178,15 @@
                         img{
                             width: 86px;
                         }
-                    }                }
+                    }
+                    button:hover{
+                        border: 1px solid black;
+                        transition-duration: 200ms;
+                    }
+                    button:active{
+                        transform: scale(95%);
+                        transition-duration: 200ms;
+                    }               }
             }
         }
         .second-side-container{

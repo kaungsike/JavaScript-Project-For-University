@@ -35,7 +35,7 @@ export const createProductDetailRender = (products) => {
     })
 }
 
-
+// for 1st side of product detail category img
 export const createCategoryImg = (product) => {
     const template = categoryImgTemplate.content.cloneNode(true);
     template.querySelector("#categoryImg").src = product.img;
@@ -44,6 +44,7 @@ export const createCategoryImg = (product) => {
 
 }
 
+// for 2nd side of product detail category img
 export const createMainCategoryImg = (product) => {
     const template = mainCategoryImgTemplate.content.cloneNode(true);
     template.querySelector(".mainCategoryImg").src = product.img;
@@ -51,3 +52,15 @@ export const createMainCategoryImg = (product) => {
     return template;
 }
 
+
+
+// handler
+
+// for 1st side of product detail category img
+export const handleProductDetailCategoryImg = (e) => {
+    if(e.target.classList.contains("category-img-btn")){
+        const productDetail = e.target.closest("#productDetail");
+        
+        productDetail.querySelector("#mainImg").src = e.target.children[0].src
+    }
+}

@@ -466,12 +466,7 @@
             <p class="price">$ <span>115.00</span></p>
             <p class="color">White / White</p>
             <div class="category-img-container" id="mainCategoryImgGroup">
-                <!-- <button>
-                    <img src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=200&hei=200&fmt=png-alpha" alt="">
-                </button>
-                <button>
-                    <img src="https://images.footlocker.com/is/image/EBFL2/D2739100?wid=200&hei=200&fmt=png-alpha" alt="">
-                </button> -->
+              <!-- append with createMainCategoryImg function from product detail.js in line 48-->
             </div>
             <p class="size">Choose a size</p>
             <div class="size-box-container">
@@ -552,8 +547,8 @@
       <!-- template for first side of product detail categories img -->
       <!-- it function is in detail.js line 17 createCategoryImg () -->
       <template id="categoryImgTemplate">
-        <button>
-          <img id="categoryImg"
+        <button class="category-img-btn">
+          <img style="pointer-events: none;" id="categoryImg" class="category-img"
             src="https://images.footlocker.com/is/image/EBFL2/W2288111_a6?wid=88&hei=88&fmt=png-alpha"
             alt=""
           />
