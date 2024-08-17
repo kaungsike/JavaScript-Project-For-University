@@ -3,7 +3,9 @@ const products = [
         id : 1,
         img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT?wid=250&hei=250',
         name : 'Vans Knu Skool',
+        brand : 'Vans',
         gender : "Men's",
+        color : 'Black / True White',
         price : 75.00,
         rating : 4.2,
         product : [
@@ -121,10 +123,12 @@ const products = [
             }
         ],  
     },
+
     {
         id : 2,
         img : 'https://images.footlocker.com/is/image/EBFL2/Q7669141?wid=250&hei=250',
         name : 'Jordan Retro 4',
+        brand : 'Jordan',
         gender : "Boys' Preschool",
         color : 'Off White / Military Blue / Neutral Grey',
         price : 100,
@@ -178,10 +182,12 @@ const products = [
             }
         ]
     },
+
     {
         id : 3,
         img : 'https://images.footlocker.com/is/image/EBFL2/Z1055100?wid=250&hei=250',
         name : "Nike Blazer Mid '77",
+        brand : "Nike",
         gender : "Women's",
         color : 'Black / White / Sail',
         price : 79.00,
@@ -240,6 +246,7 @@ const products = [
         id : 4,
         img : 'https://images.footlocker.com/is/image/EBFL2/T8529164?wid=250&hei=250',
         name : 'Jordan Retro 6',
+        brand : 'Jordan',
         gender : "Men's",
         color : 'White / Navy / Red',
         price : 200,
@@ -317,11 +324,11 @@ const products = [
         ]
     },
 
-
     {
         id : 5,
         img : 'https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250',
         name : "Nike Air Force 1 '07 LE",
+        brand : 'Nike',
         gender : "Men's",
         color : 'White / White',
         price : 115,
@@ -380,6 +387,7 @@ const products = [
         id : 6,
         img : 'https://images.footlocker.com/is/image/EBFL2/98893005?wid=250&hei=250',
         name : 'New Balance 9060',
+        brand : 'New Balance',
         gender : "Men's",
         color : 'Black / Grey',
         price : 150,

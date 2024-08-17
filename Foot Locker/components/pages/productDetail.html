@@ -460,11 +460,11 @@
                 <p>4.6</p>
               </div>
             </div>
-            <h3>Nike Air Force 1 '07 LE</h3>
-            <p class="gender">Men's</p>
-            <a class="link" href="">Explore Nike</a>
-            <p class="price">$ <span>115.00</span></p>
-            <p class="color">White / White</p>
+            <h3 id="productName">Nike Air Force 1 '07 LE</h3>
+            <p class="gender" id="gender">Men's</p>
+            <a class="link" href="">Explore <span id="brand"></span></a>
+            <p class="price">$ <span id="price">115.00</span></p>
+            <p class="color" id="color">White / White</p>
             <div class="category-img-container" id="mainCategoryImgGroup">
               <!-- append with createMainCategoryImg function from product detail.js in line 48-->
             </div>
@@ -557,8 +557,8 @@
 
       <!-- template for product detail second side for category img -->
       <template id="mainCategoryImgTemplate">
-        <button>
-          <img class="mainCategoryImg" src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=200&hei=200&fmt=png-alpha" alt="">
+        <button class="min-category-img-btn">
+          <img style="pointer-events: none;" class="mainCategoryImg" src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=200&hei=200&fmt=png-alpha" alt="">
       </button>
       </template>
 

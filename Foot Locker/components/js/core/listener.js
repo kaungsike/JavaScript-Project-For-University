@@ -1,5 +1,5 @@
 import { handleProductCardMinImg } from "../app/card.js";
-import { handleProductDetailCategoryImg } from "../app/detail.js";
+import { handleProductDetailCategoryImg, handleProductDetailMainCategoryImg } from "../app/detail.js";
 import { productCardGroup, productDetailGroup } from "./selectors.js";
 
 
@@ -10,7 +10,10 @@ const listener = () => {
    //  for product detail 1st side category img
    else if(productDetailGroup!=null){
       productDetailGroup.addEventListener("click",handleProductDetailCategoryImg)
+
+      productDetailGroup.addEventListener("click",handleProductDetailMainCategoryImg)
    }
+   
    
    
    
