@@ -102,12 +102,96 @@
             <h5>My Cart</h5>
           </div>
           <div class="my-cart-container">
+            <!-- for empty cart state -->
             <div class="empty-cart-container">
               <img
                 src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAjG7dC4dH9CvXVXxaG3ki19wNgiS6IjgCHoE0w3mYFQReFYcG"
                 alt=""
               />
               <p>Your cart is empty</p>
+            </div>
+
+            <!-- for show item state -->
+            <div class="item-in-cart-container">
+              <div class="item-group-container">
+                <div class="item-container">
+                  <div class="img-container">
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/W2288111?wid=250&hei=250"
+                      alt=""
+                    />
+                  </div>
+                  <div class="detail-container">
+                    <h3>Nike Air Force 1 '07 LE</h3>
+                    <p>Item code : <span>2328240284082</span></p>
+                    <p class="c">Price : $<span>115</span></p>
+
+                    <div class="quantity-container">
+                      <div class="a-side">
+                        Quantity :
+                        <div class="a">
+                          <p class="sub-btn">
+                            
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              style="width: 15px;fill: white;"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5 12h14"
+                              />
+                            </svg>
+                          </p>
+                          <span class="quantity">1</span>
+                          <button class="add-btn">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              style="width: 15px;fill: white;margin-left: 2px;"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M12 4.5v15m7.5-7.5h-15"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="b-side">
+                        Cost : $ <span class="cost">115</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-container">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                    </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-summary-container">
+                <h4>Order Summary</h4>
+                <div class="summary-container">
+                  <div class="header">
+                    <p class="subtotal">Subtotal</p>
+                    <p class="cost-container">
+                      $ <span class="cost">908.99</span>
+                    </p>
+                  </div>
+                  <hr style="margin-left: 40px; margin-right: 40px" />
+                  <div class="order-list-group border"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -169,7 +253,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        style="stroke: black;width: 25px;height: 25px;"
+                        style="stroke: black; width: 25px; height: 25px"
                       >
                         <path
                           stroke-linecap="round"
@@ -180,15 +264,17 @@
                     </button>
                   </div>
                   <div class="img-container">
-                    <img src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha" alt="">
-                </div>
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="cart-lower">
-                    <h6>Jordan Retro 4</h6>
-                    <p>Boy's</p>
-                    <a>$ <span>100.00</span></a>
+                  <h6>Jordan Retro 4</h6>
+                  <p>Boy's</p>
+                  <a>$ <span>100.00</span></a>
                 </div>
-
               </div>
               <div class="cart">
                 <div class="cart-upper">
@@ -200,7 +286,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        style="stroke: black;width: 25px;height: 25px;"
+                        style="stroke: black; width: 25px; height: 25px"
                       >
                         <path
                           stroke-linecap="round"
@@ -211,15 +297,17 @@
                     </button>
                   </div>
                   <div class="img-container">
-                    <img src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha" alt="">
-                </div>
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="cart-lower">
-                    <h6>Jordan Retro 4</h6>
-                    <p>Boy's</p>
-                    <a>$ <span>100.00</span></a>
+                  <h6>Jordan Retro 4</h6>
+                  <p>Boy's</p>
+                  <a>$ <span>100.00</span></a>
                 </div>
-
               </div>
               <div class="cart">
                 <div class="cart-upper">
@@ -231,7 +319,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        style="stroke: black;width: 25px;height: 25px;"
+                        style="stroke: black; width: 25px; height: 25px"
                       >
                         <path
                           stroke-linecap="round"
@@ -242,15 +330,17 @@
                     </button>
                   </div>
                   <div class="img-container">
-                    <img src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha" alt="">
-                </div>
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="cart-lower">
-                    <h6>Jordan Retro 4</h6>
-                    <p>Boy's</p>
-                    <a>$ <span>100.00</span></a>
+                  <h6>Jordan Retro 4</h6>
+                  <p>Boy's</p>
+                  <a>$ <span>100.00</span></a>
                 </div>
-
               </div>
               <div class="cart">
                 <div class="cart-upper">
@@ -262,7 +352,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        style="stroke: black;width: 25px;height: 25px;"
+                        style="stroke: black; width: 25px; height: 25px"
                       >
                         <path
                           stroke-linecap="round"
@@ -273,15 +363,17 @@
                     </button>
                   </div>
                   <div class="img-container">
-                    <img src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha" alt="">
-                </div>
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="cart-lower">
-                    <h6>Jordan Retro 4</h6>
-                    <p>Boy's</p>
-                    <a>$ <span>100.00</span></a>
+                  <h6>Jordan Retro 4</h6>
+                  <p>Boy's</p>
+                  <a>$ <span>100.00</span></a>
                 </div>
-
               </div>
               <div class="cart">
                 <div class="cart-upper">
@@ -293,7 +385,7 @@
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        style="stroke: black;width: 25px;height: 25px;"
+                        style="stroke: black; width: 25px; height: 25px"
                       >
                         <path
                           stroke-linecap="round"
@@ -304,17 +396,18 @@
                     </button>
                   </div>
                   <div class="img-container">
-                    <img src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha" alt="">
-                </div>
+                    <img
+                      src="https://images.footlocker.com/is/image/EBFL2/Q7669103?wid=244&hei=244&fmt=png-alpha"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="cart-lower">
-                    <h6>Jordan Retro 4</h6>
-                    <p>Boy's</p>
-                    <a>$ <span>100.00</span></a>
+                  <h6>Jordan Retro 4</h6>
+                  <p>Boy's</p>
+                  <a>$ <span>100.00</span></a>
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>
