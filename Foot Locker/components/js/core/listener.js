@@ -1,3 +1,4 @@
+import { addToCartHandler } from "../app/addToCart.js";
 import { handleProductCardMinImg } from "../app/card.js";
 import { handleProductDetailCategoryImg, handleProductDetailMainCategoryImg } from "../app/detail.js";
 import { productCardGroup, productDetailGroup } from "./selectors.js";
@@ -12,7 +13,10 @@ const listener = () => {
       productDetailGroup.addEventListener("click",handleProductDetailCategoryImg)
 
       productDetailGroup.addEventListener("click",handleProductDetailMainCategoryImg)
+
+      productDetailGroup.addEventListener("click",addToCartHandler)
    }
+
    
    
    
