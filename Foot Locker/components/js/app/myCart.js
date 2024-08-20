@@ -23,6 +23,20 @@ export const add = (id,index) => {
     console.log(addedItems)
 }
 
+export const addToAddedItems = (id,quantity,index) => {
+    localStorage.setItem("id",id);
+    localStorage.setItem("quantity",quantity);
+    localStorage.setItem("product",products[id]);
+
+    const item = {
+        id : localStorage.getItem("id"),
+        quantity : localStorage.getItem("quantity"),
+        product : localStorage.getItem("product"),
+    }
+
+    return item;
+}
+
 
 export const createAddedItem = (data) => {
     const template = addedItemTemplate.content.cloneNode(true);
