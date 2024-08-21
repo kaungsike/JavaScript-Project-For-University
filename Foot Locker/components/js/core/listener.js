@@ -1,7 +1,8 @@
 import { addToCartHandler } from "../app/addToCart.js";
 import { handleProductCardMinImg } from "../app/card.js";
 import { handleProductDetailCategoryImg, handleProductDetailMainCategoryImg } from "../app/detail.js";
-import { productCardGroup, productDetailGroup } from "./selectors.js";
+import { handleAddedItems } from "../app/myCart.js";
+import { itemGroup, productCardGroup, productDetailGroup } from "./selectors.js";
 
 
 const listener = () => {
@@ -15,6 +16,9 @@ const listener = () => {
       productDetailGroup.addEventListener("click",handleProductDetailMainCategoryImg)
 
       productDetailGroup.addEventListener("click",addToCartHandler)
+   }
+   else if(itemGroup!=null){
+      itemGroup.addEventListener("click",handleAddedItems)
    }
 
    

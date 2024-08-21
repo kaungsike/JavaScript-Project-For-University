@@ -1,66 +1,49 @@
 import { addedItemTemplate, itemGroup } from "../core/selectors.js";
-import products from "../data/productsData.js";
-
-
-export const addedItems = [
-    {
-        id : 1,
-        quantity : 1,
-        cost : 75,
-        product : products[0],
-    }
-];
-
-
-// export const add = (id,index) => {
-//     const data = {
-//         id,
-//         quantity : 1,
-//         product : products[id]
-//     }
-//     addedItems.push(data);
-//     createAddedItemRender(addedItems)
-//     console.log(addedItems)
-// }
-
-export const addToAddedItems = (id,quantity,index) => {
-    localStorage.setItem("id",id);
-    localStorage.setItem("quantity",quantity);
-    localStorage.setItem("product",JSON.stringify(products[id]));
-
-    const item = {
-        id : localStorage.getItem("id"),
-        quantity : localStorage.getItem("quantity"),
-        product : JSON.parse(localStorage.getItem("product")),
-    }
-
-    return item;
-}
-
-// export const addToLocalStore = () => {
-
-// }
-
+import { storage } from "../data/localStore.js";
 
 export const createAddedItem = (data) => {
-    const template = addedItemTemplate.content.cloneNode(true);
-    const itemCard = template.querySelector("#itemCard");
+  const template = addedItemTemplate.content.cloneNode(true);
+  const itemCard = template.querySelector("#itemCard");
 
-    template.querySelector(".item-img").src = data.product.img;
-    template.querySelector(".name").innerText = data.product.name;
-    template.querySelector(".item-code").innerText = Date.now();
-    template.querySelector(".price").innerText = data.product.price
-    template.querySelector(".quantity").innerText = data.quantity;
-    template.querySelector(".cost").innerText = data.quantity*data.product.price;
+  template.querySelector(".item-img").src = data.product.img;
+  template.querySelector(".name").innerText = data.product.name;
+  template.querySelector(".item-code").innerText = Date.now();
+  template.querySelector(".price").innerText = data.product.price;
+  template.querySelector(".quantity").innerText = data.quantity;
+  template.querySelector(".cost").innerText =
+    data.quantity * data.product.price;
+  template.querySelector(".del-btn").setAttribute("id", data.id);
 
-    return template;
-}
-
+  return template;
+};
 
 export const createAddedItemRender = (products) => {
-    products.forEach((product) => {
-        if(itemGroup!=null){
-            itemGroup.append(createAddedItem(product))
-        }
-    })
-}
+  products.forEach((product) => {
+    if (itemGroup != null) {
+      itemGroup.append(createAddedItem(product));
+    }
+  });
+};
+
+// Handlers
+
+export const handleAddedItems = (e) => {
+  if (e.target.classList.contains("del-btn")) {
+    const currentData = JSON.parse(localStorage.getItem("data"));
+
+    const afterData = currentData.filter((el) => {
+      if (el.id != e.target.getAttribute("id")) {
+        
+        return el;
+      }
+    });
+
+    localStorage.setItem("data",JSON.stringify(afterData));
+
+    createAddedItemRender(JSON.parse(localStorage.getItem("data")))
+
+
+  }
+};
+
+// for localStorage.js

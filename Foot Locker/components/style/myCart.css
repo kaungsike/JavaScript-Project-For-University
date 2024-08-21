@@ -149,6 +149,10 @@
                 .item-group-container{
                     width: 650px;
                     height: 100%;
+                    overflow-y: scroll;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
                     .item-container{
                         background-color: #fff;
                         height: 150px;
@@ -238,6 +242,9 @@
                             align-items: center;
                             justify-content: center;
                             button{
+                                opacity: 0;
+                                transform: translateX(30px);
+                                transition-duration: 250ms;
                                 width: 40px;
                                 height: 40px;
                                 background-color: #fff;
@@ -248,13 +255,19 @@
                                 svg{
                                     width: 30px;
                                     stroke: red;
+                                    pointer-events: none;
                                 }
                             }
-                            button:active{
-                                transform: scale(95%);
-                                transition-duration: 150ms;
+                            button:active svg{
+                                transform: scale(90%);
+                                transition-duration: 200ms;
                             }
                         }
+                    }
+                    .item-container:hover .button-container button{
+                        opacity: 100;
+                        transition-duration: 200ms;
+                        transform: translateX(0px);
                     }
                 }
                 .item-summary-container{
