@@ -12,30 +12,34 @@ export const addedItems = [
 ];
 
 
-export const add = (id,index) => {
-    const data = {
-        id,
-        quantity : 1,
-        product : products[id]
-    }
-    addedItems.push(data);
-    createAddedItemRender(addedItems)
-    console.log(addedItems)
-}
+// export const add = (id,index) => {
+//     const data = {
+//         id,
+//         quantity : 1,
+//         product : products[id]
+//     }
+//     addedItems.push(data);
+//     createAddedItemRender(addedItems)
+//     console.log(addedItems)
+// }
 
 export const addToAddedItems = (id,quantity,index) => {
     localStorage.setItem("id",id);
     localStorage.setItem("quantity",quantity);
-    localStorage.setItem("product",products[id]);
+    localStorage.setItem("product",JSON.stringify(products[id]));
 
     const item = {
         id : localStorage.getItem("id"),
         quantity : localStorage.getItem("quantity"),
-        product : localStorage.getItem("product"),
+        product : JSON.parse(localStorage.getItem("product")),
     }
 
     return item;
 }
+
+// export const addToLocalStore = () => {
+
+// }
 
 
 export const createAddedItem = (data) => {

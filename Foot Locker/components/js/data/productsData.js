@@ -480,6 +480,83 @@ const products = [
         ]
     },
 
+    {
+        id : 7,
+        img : "https://images.footlocker.com/is/image/EBFL2/M1906REB?wid=250&hei=250",
+        name : 'New Balance 1906R',
+        brand : 'New Balance',
+        gender : "Men's",
+        color : 'Blue / White / Silver',
+        price : 155,
+        rating : 3.2,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/M1906REB?wid=250&hei=250',
+                color : 'Blue / White / Silver',
+                price : 155,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/M1906REB_a1?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906REB_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906REB_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906REB_a3?wid=581&hei=581&fmt=png-alpha',
+                    },
+                    {
+                        img : "https://images.footlocker.com/is/image/EBFL2/M1906REB_a4?wid=581&hei=581&fmt=png-alpha",
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906REB_a5?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ]
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/M1906RA?wid=250&hei=250',
+                color : 'Black / Gold / White',
+                price : 155,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/M1906RA_a1?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RA_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RA_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RA_a3?wid=581&hei=581&fmt=png-alpha',
+                    },
+                    {
+                        img : "https://images.footlocker.com/is/image/EBFL2/M1906RA_a4?wid=581&hei=581&fmt=png-alpha",
+                    },
+                ]
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/M1906RET?wid=250&hei=250',
+                color : 'Granite / Metallic Pink',
+                price : 155,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/M1906RET_a1?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RET_a1?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RET_a2?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/M1906RET_a3?wid=581&hei=581&fmt=png-alpha',
+                    },
+                    {
+                        img : "https://images.footlocker.com/is/image/EBFL2/M1906RET_a4?wid=581&hei=581&fmt=png-alpha",
+                    }
+                ]
+            },
+
+        ]
+    }
+
     // {
     //     id : 7,
     //     img : 'https://images.footlocker.com/is/image/EBFL2/Z5485071?wid=250&hei=250',
