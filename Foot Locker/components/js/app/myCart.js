@@ -18,32 +18,38 @@ export const createAddedItem = (data) => {
 };
 
 export const createAddedItemRender = (products) => {
-  products.forEach((product) => {
-    if (itemGroup != null) {
-      itemGroup.append(createAddedItem(product));
-    }
-  });
+  if(itemGroup!=null){
+    itemGroup.innerHTML = "";
+    products.forEach((product) => {
+        itemGroup.append(createAddedItem(product));
+    });
+  }
 };
 
 // Handlers
 
 export const handleAddedItems = (e) => {
   if (e.target.classList.contains("del-btn")) {
-    const currentData = JSON.parse(localStorage.getItem("data"));
+    if(confirm("Atr you sure you want to delete?")){
+      const currentData = JSON.parse(localStorage.getItem("data"));
 
-    const afterData = currentData.filter((el) => {
-      if (el.id != e.target.getAttribute("id")) {
+      console.log("currant data",currentData);
+
+      const afterData = currentData.filter((el) => {
+        if (el.id != e.target.getAttribute("id")) {
         
-        return el;
+         return el;
+        }
+      });
+
+      console.log("after data",afterData);
+
+      localStorage.setItem("data",JSON.stringify(afterData));
+
+      createAddedItemRender(JSON.parse(localStorage.getItem("data")))
+
       }
-    });
-
-    localStorage.setItem("data",JSON.stringify(afterData));
-
-    createAddedItemRender(JSON.parse(localStorage.getItem("data")))
-
-
-  }
+    }
 };
 
 // for localStorage.js
