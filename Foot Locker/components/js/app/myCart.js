@@ -13,6 +13,8 @@ export const createAddedItem = (data) => {
   template.querySelector(".cost").innerText =
     data.quantity * data.product.price;
   template.querySelector(".del-btn").setAttribute("id", data.id);
+  template.querySelector(".sub-btn").setAttribute("id", data.id);
+  template.querySelector(".add-btn").setAttribute("id", data.id);
 
   return template;
 };
@@ -28,7 +30,7 @@ export const createAddedItemRender = (products) => {
 
 // Handlers
 
-export const handleAddedItems = (e) => {
+export const handleDelBtn = (e) => {
   if (e.target.classList.contains("del-btn")) {
     if(confirm("Atr you sure you want to delete?")){
       const currentData = JSON.parse(localStorage.getItem("data"));
@@ -51,5 +53,44 @@ export const handleAddedItems = (e) => {
       }
     }
 };
+
+
+// for quantity
+export const handleAddSubBtn = (e) => {
+  if(e.target.classList.contains("add-btn")){
+    const currentData = JSON.parse(localStorage.getItem("data"))
+    
+    const afterData = currentData.map((el) => {
+      if(el.id==e.target.getAttribute("id")){
+        el.quantity +=1;
+      }
+      return el
+    })
+
+    localStorage.setItem("data",JSON.stringify(afterData));
+
+    createAddedItemRender(JSON.parse(localStorage.getItem("data")))
+
+  }
+  else if(e.target.classList.contains("sub-btn")){
+    const currentData = JSON.parse(localStorage.getItem("data"))
+    
+    const afterData = currentData.map((el) => {
+      if(el.id==e.target.getAttribute("id")){
+        if(el.quantity==1){
+          alert("Can't reduce more!")
+        }
+        else{
+          el.quantity -=1;
+        }
+      }
+      return el
+    })
+
+    localStorage.setItem("data",JSON.stringify(afterData));
+
+    createAddedItemRender(JSON.parse(localStorage.getItem("data")))
+  }
+}
 
 // for localStorage.js
