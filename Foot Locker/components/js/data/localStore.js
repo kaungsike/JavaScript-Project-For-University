@@ -7,12 +7,14 @@ export let storage = [];
 localStorage.getItem("data")? storage = JSON.parse(localStorage.getItem("data")) : ""
      
 
-export const setDataToLocalStore = (id,index,quantity) => {
+export const setDataToLocalStore = (id,index,quantity,size) => {
     const obj = {
-        id : id,
-        quantity : quantity,
+        id,
+        quantity,
         cost : 100,
-        product : products[id]
+        size :size,
+        product : products[id].product[index],
+        detail : products[id]
     }
 
     console.log("before set to localStorage!");

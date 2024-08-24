@@ -3,16 +3,17 @@ import { storage } from "../data/localStore.js";
 
 export const createAddedItem = (data) => {
   const template = addedItemTemplate.content.cloneNode(true);
-  const itemCard = template.querySelector("#itemCard");
+  console.log(data)
 
   template.querySelector(".item-img").src = data.product.img;
-  template.querySelector(".name").innerText = data.product.name;
-  template.querySelector(".item-code").innerText = Date.now();
+  template.querySelector(".name").innerText = data.detail.name;
+  template.querySelector(".item-code").innerText = data.product.color;
   template.querySelector(".price").innerText = data.product.price;
+  template.querySelector(".size").innerText = data.size;
   template.querySelector(".quantity").innerText = data.quantity;
-  template.querySelector(".cost").innerText =
-    data.quantity * data.product.price;
+  template.querySelector(".cost").innerText = data.quantity * data.product.price;
   template.querySelector(".del-btn").setAttribute("id", data.id);
+  template.querySelector(".del-btn").setAttribute("color", data.product.color);
   template.querySelector(".sub-btn").setAttribute("id", data.id);
   template.querySelector(".add-btn").setAttribute("id", data.id);
 
@@ -37,8 +38,10 @@ export const handleDelBtn = (e) => {
 
       console.log("currant data",currentData);
 
+      console.log(e.target.getAttribute("color"))
+
       const afterData = currentData.filter((el) => {
-        if (el.id != e.target.getAttribute("id")) {
+        if (el.id != e.target.getAttribute("id") || el.product.color != e.target.getAttribute("color")) {
         
          return el;
         }

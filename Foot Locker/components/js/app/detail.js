@@ -24,7 +24,6 @@ export const createProductDetail = (data) => {
         mainCategoryImgGroup.append(createMainCategoryImg(el,index))
         console.log(index)
     })
-    
 
     return template
 }
@@ -79,6 +78,8 @@ export const handleProductDetailMainCategoryImg = (e) => {
 
         card.querySelector("#mainImg").src = product.main_img;
 
+        document.querySelector(".add-to-cart-btn").setAttribute("index",e.target.getAttribute("index"))
+
         card.querySelector("#price").innerText = product.price;
         card.querySelector("#color").innerText = product.color;
 
@@ -89,5 +90,13 @@ export const handleProductDetailMainCategoryImg = (e) => {
         product.productInfo.forEach((el) => {
             categoryImgGroup.append(createCategoryImg(el,e.target.getAttribute("index")))
         })
+    }
+}
+
+// for size choosing
+
+export const handleSizeChoosing = (e) => {
+    if(e.target.classList.contains("size-box")){
+        document.querySelector(".add-to-cart-btn").setAttribute("size",e.target.innerText)
     }
 }
