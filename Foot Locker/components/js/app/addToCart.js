@@ -6,11 +6,23 @@ export const addToCartHandler = (e) => {
     if(e.target.classList.contains("add-to-cart-btn")){
         const id = window.location.href.split("#")[1]-1;
         const index = document.querySelector(".add-to-cart-btn").getAttribute("index")
-        console.log(index)
         const size  = e.target.getAttribute("size");
+        const color  = document.querySelector(".color").innerText;
 
-        console.log(e.target.getAttribute("size"))
-
-        setDataToLocalStore(id,index,1,size)
+        if(JSON.parse(localStorage.getItem("data")) == null){
+            setDataToLocalStore(id,index,1,size)
+            console.log("is null")
+        }
+        else if(JSON.parse(localStorage.getItem("data"))!=null){
+            console.log("not null")
+            const isExist  = JSON.parse(localStorage.getItem("data")).find((el) => el.id == id && el.product.color == color)
+            if(isExist){
+                alert("This item is  already exist!");
+            }
+            else{
+                alert("Added!");
+                setDataToLocalStore(id,index,1,size)
+            }
+        }      
     }
 }
