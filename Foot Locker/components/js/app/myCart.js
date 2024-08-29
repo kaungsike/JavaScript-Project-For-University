@@ -13,7 +13,10 @@ export const createAddedItem = (data) => {
   template.querySelector(".quantity").innerText = data.quantity;
   template.querySelector(".cost").innerText = data.quantity * data.product.price;
   template.querySelector(".del-btn").setAttribute("id", data.id);
+  template.querySelector(".del-btn").setAttribute("size", data.size);
   template.querySelector(".del-btn").setAttribute("color", data.product.color);
+  template.querySelector(".sub-btn").setAttribute("color", data.product.color);
+  template.querySelector(".add-btn").setAttribute("color", data.product.color);
   template.querySelector(".sub-btn").setAttribute("id", data.id);
   template.querySelector(".add-btn").setAttribute("id", data.id);
 
@@ -39,9 +42,10 @@ export const handleDelBtn = (e) => {
       console.log("currant data",currentData);
 
       console.log(e.target.getAttribute("color"))
+      console.log(e.target.getAttribute("size"))
 
       const afterData = currentData.filter((el) => {
-        if (el.id != e.target.getAttribute("id") || el.product.color != e.target.getAttribute("color")) {
+        if (el.id != e.target.getAttribute("id") || el.product.color != e.target.getAttribute("color") || el.size!=e.target.getAttribute("size")) {
         
          return el;
         }
@@ -64,7 +68,7 @@ export const handleAddSubBtn = (e) => {
     const currentData = JSON.parse(localStorage.getItem("data"))
     
     const afterData = currentData.map((el) => {
-      if(el.id==e.target.getAttribute("id")){
+      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color")){
         el.quantity +=1;
       }
       return el
@@ -79,7 +83,7 @@ export const handleAddSubBtn = (e) => {
     const currentData = JSON.parse(localStorage.getItem("data"))
     
     const afterData = currentData.map((el) => {
-      if(el.id==e.target.getAttribute("id")){
+      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color")){
         if(el.quantity==1){
           alert("Can't reduce more!")
         }

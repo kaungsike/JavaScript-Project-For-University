@@ -31,27 +31,8 @@ const products = [
                         img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a5?wid=581&hei=581&fmt=png-alpha'
                     }
                 ],
-                // productDetailInfo : {
-                //     img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha',
-                //     categoryImg : [
-                //         {
-                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a1?wid=581&hei=581&fmt=png-alpha'
-                //         },
-                //         {
-                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a2?wid=581&hei=581&fmt=png-alpha'
-                //         },
-                //         {
-                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a3?wid=581&hei=581&fmt=png-alpha'
-                //         },
-                //         {
-                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a4?wid=581&hei=581&fmt=png-alpha'
-                //         },
-                //         {
-                //             img : 'https://images.footlocker.com/is/image/EBFL2/N09QC6BT_a5?wid=581&hei=581&fmt=png-alpha'
-                //         }
-                //     ]
-                // }
             },
+
             {
                 img : 'https://images.footlocker.com/is/image/EBFL2/N0009QC6?wid=250&hei=250',
                 color : 'Black / Red / White',
@@ -75,6 +56,7 @@ const products = [
                     }
                 ],
             },
+
             {
                 img : 'https://images.footlocker.com/is/image/EBFL2/9QCNWD?wid=250&hei=250',
                 color : 'Navy / White',
@@ -98,6 +80,7 @@ const products = [
                     }
                 ],
             },
+
             {
                 img : 'https://images.footlocker.com/is/image/EBFL2/VN9QCBLS?wid=250&hei=250',
                 color : 'Yellow / Brown',

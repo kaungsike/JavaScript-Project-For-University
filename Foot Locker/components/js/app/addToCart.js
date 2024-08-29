@@ -9,14 +9,19 @@ export const addToCartHandler = (e) => {
         const size  = e.target.getAttribute("size");
         const color  = document.querySelector(".color").innerText;
 
+        console.log(JSON.parse(localStorage.getItem("data")))
+
         if(JSON.parse(localStorage.getItem("data")) == null){
             setDataToLocalStore(id,index,1,size)
             console.log("is null")
+            alert("Item added!")
         }
         else if(JSON.parse(localStorage.getItem("data"))!=null){
             console.log("not null")
-            const isExist  = JSON.parse(localStorage.getItem("data")).find((el) => el.id == id && el.product.color == color)
+            const isExist  = JSON.parse(localStorage.getItem("data")).find((el) => el.id == id && el.product.color == color && el.size==size)
+
             if(isExist){
+                
                 alert("This item is  already exist!");
             }
             else{

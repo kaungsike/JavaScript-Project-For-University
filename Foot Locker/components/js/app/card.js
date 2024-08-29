@@ -4,6 +4,11 @@ import {
   productCardGroup,
 } from "../core/selectors.js";
 
+
+export function run() {
+  return true;
+}
+
 export const createProductCard = (data) => {
   const template = cardTemplate.content.cloneNode(true);
 

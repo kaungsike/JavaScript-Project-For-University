@@ -11,7 +11,6 @@ export const setDataToLocalStore = (id,index,quantity,size) => {
     const obj = {
         id,
         quantity,
-        cost : 100,
         size :size,
         product : products[id].product[index],
         detail : products[id]

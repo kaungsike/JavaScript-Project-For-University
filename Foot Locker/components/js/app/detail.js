@@ -1,7 +1,6 @@
 import { categoryImgTemplate, mainCategoryImgTemplate, productDetailGroup, productDetailTemplate } from "../core/selectors.js";
 import products from "../data/productsData.js";
 
-
 export const createProductDetail = (data) => {
     const template = productDetailTemplate.content.cloneNode(true);
     template.querySelector("#mainImg").src = data.product[window.location.href.split("#")[2]].main_img
@@ -19,10 +18,11 @@ export const createProductDetail = (data) => {
         categoryImgGroup.append(createCategoryImg(img))
     })
 
+
     // for 2nd side of product detail category img
     data.product.forEach((el,index) => {
         mainCategoryImgGroup.append(createMainCategoryImg(el,index))
-        console.log(index)
+
     })
 
     return template
