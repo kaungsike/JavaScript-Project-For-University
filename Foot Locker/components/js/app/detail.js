@@ -14,10 +14,9 @@ export const createProductDetail = (data) => {
     const mainCategoryImgGroup = template.querySelector("#mainCategoryImgGroup");
 
     // for 1st side of product detail category img
-    data.product[window.location.href.split("#")[2]].productInfo.forEach((img) => {
-        categoryImgGroup.append(createCategoryImg(img))
+    data.product[window.location.href.split("#")[2]].productInfo.forEach((img,index) => {
+        categoryImgGroup.append(createCategoryImg(img,index))
     })
-
 
     // for 2nd side of product detail category img
     data.product.forEach((el,index) => {
@@ -38,10 +37,11 @@ export const createProductDetailRender = (products) => {
 }
 
 // for 1st side of product detail category img
-export const createCategoryImg = (product) => {
+export const createCategoryImg = (product,index) => {
     const template = categoryImgTemplate.content.cloneNode(true);
     template.querySelector("#categoryImg").src = product.img;
-
+    template.querySelector(".category-img-btn").setAttribute("index",index)
+    console.log(template.querySelector(`[index]`))
     return template;
 
 }
@@ -100,3 +100,4 @@ export const handleSizeChoosing = (e) => {
         document.querySelector(".add-to-cart-btn").setAttribute("size",e.target.innerText)
     }
 }
+

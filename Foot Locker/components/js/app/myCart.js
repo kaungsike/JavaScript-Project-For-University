@@ -1,6 +1,4 @@
 import { addedItemTemplate, itemGroup } from "../core/selectors.js";
-import { storage } from "../data/localStore.js";
-
 export const createAddedItem = (data) => {
   const template = addedItemTemplate.content.cloneNode(true);
   console.log(data)

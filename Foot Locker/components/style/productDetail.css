@@ -166,25 +166,27 @@
                     align-items: center;
                     justify-content: center;
                     gap: 25px;
-                    button{
+                    /* background: black; */
+                    .category-img-btn{
                         width: 92px;
                         height: 92px;
-                        background: #f5f5f5;
                         display: flex;
                         align-items: center;
                         justify-content:center;
+                        border: 1px solid transparent;
                         img{
                             width: 86px;
                         }
                     }
-                    button:hover{
+                    .category-img-btn:hover{
                         border: 1px solid black;
                         transition-duration: 200ms;
                     }
                     button:active{
                         transform: scale(95%);
                         transition-duration: 200ms;
-                    }               }
+                    }
+                }
             }
         }
         .second-side-container{
@@ -257,11 +259,19 @@
                     width: 77px;
                     height: 77px;
                     background: white;
-                    border: none;
-                    border-bottom: 2px solid black;
+                    border: 1px solid transparent;
                     img{
+                        border: none;
                         height: 100%;
                     }
+                }
+                button:active{
+                    transform: scale(95%);
+                    transition-duration: 200ms;
+                }
+                button:hover{
+                    transition-duration: 200ms;
+                    border: 1px solid black;
                 }
             }
             .size{

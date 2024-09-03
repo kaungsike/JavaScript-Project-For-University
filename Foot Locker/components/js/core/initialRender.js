@@ -3,9 +3,11 @@ import { createProductDetailRender } from "../app/detail.js"
 import { createAddedItemRender } from "../app/myCart.js"
 import products from "../data/productsData.js"
 
+
 const initialRender = () => {
     createProductCardRender(products)
     createProductDetailRender(products)
+    // appendClass();
     createAddedItemRender(JSON.parse(localStorage.getItem("data")))
 }
 

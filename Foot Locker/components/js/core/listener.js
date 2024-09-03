@@ -2,7 +2,7 @@ import { addToCartHandler } from "../app/addToCart.js";
 import { handleProductCardMinImg } from "../app/card.js";
 import { handleProductDetailCategoryImg, handleProductDetailMainCategoryImg, handleSizeChoosing } from "../app/detail.js";
 import { handleAddSubBtn, handleDelBtn } from "../app/myCart.js";
-import { toggleBorder } from "./animade.js";
+import { appendBorder } from "./animate.js";
 import { itemGroup, productCardGroup, productDetailGroup } from "./selectors.js";
 
 
@@ -20,7 +20,8 @@ const listener = () => {
 
       productDetailGroup.addEventListener("click",handleSizeChoosing)
 
-      productDetailGroup.addEventListener("click",toggleBorder)
+      productDetailGroup.addEventListener("click",appendBorder)
+
    }
    else if(itemGroup!=null){
       itemGroup.addEventListener("click",handleDelBtn)
