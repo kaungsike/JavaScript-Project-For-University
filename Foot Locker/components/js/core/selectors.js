@@ -7,11 +7,14 @@ export const categoryImgTemplate = document.querySelector("#categoryImgTemplate"
 export const mainCategoryImgTemplate = document.querySelector("#mainCategoryImgTemplate");
 // in myCart.html
 export const addedItemTemplate = document.querySelector("#addedItemTemplate");
+export const orderListTemplate = document.querySelector("#orderListTemplate");
+
 
 export const productCardGroup = document.querySelector("#productCardGroup")
 export const minImgGroup = document.querySelector("#minImgGroup")
 export const productDetailGroup = document.querySelector("#productDetailGroup")
 export const itemGroup = document.querySelector("#itemGroup")
+export const orderListGroup = document.querySelector("#orderListGroup")
 
 export const productCard = document.querySelector("#productCard")
 export const header = document.querySelector(".header")

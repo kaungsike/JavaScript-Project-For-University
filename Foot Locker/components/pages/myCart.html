@@ -51,7 +51,7 @@
         </div>
         <div class="category-nev-container container">
           <div class="categories">
-            <a href="">Men's</a>
+            <a href="./menSneakers.html">Men's</a>
             <a href="">Women's</a>
             <a href="">Kid's</a>
             <a href="">New Arrivals</a>
@@ -126,7 +126,16 @@
                     </p>
                   </div>
                   <hr style="margin-left: 40px; margin-right: 40px" />
-                  <div class="order-list-group border"></div>
+                  <div class="list-title">
+                    <p>Name</p>
+                    <p style="margin-left: 125px;">Size</p>
+                    <p style="margin-left: 35px;">Quantity</p>
+                    <p style="margin-left:44px;">Price</p>
+                    <p style="margin-left: auto;">Cost</p>
+                  </div>
+                  <div id="orderListGroup" class="order-list-group">
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -415,6 +424,16 @@
               </svg>
             </button>
           </div>
+        </div>
+      </template>
+
+      <template id="orderListTemplate">
+        <div class="order-list">
+          <p style="width: 130px;white-space: nowrap;text-overflow: hidden;" class="item-name">Jordan Retro 4</p>
+          <p class="item-size">15</p>
+          <p class="item-quantity">2</p>
+          <p class="">$ <span class="item-price">100</span></p>
+          <p>$ <span class="cost">200</span></p>
         </div>
       </template>
 

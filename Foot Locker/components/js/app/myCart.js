@@ -1,4 +1,4 @@
-import { addedItemTemplate, itemGroup } from "../core/selectors.js";
+import { addedItemTemplate, itemGroup, orderListGroup, orderListTemplate } from "../core/selectors.js";
 export const createAddedItem = (data) => {
   const template = addedItemTemplate.content.cloneNode(true);
   console.log(data)
@@ -29,6 +29,24 @@ export const createAddedItemRender = (products) => {
     });
   }
 };
+
+export const createOrderList = (data) => {
+  const template = orderListTemplate.content.cloneNode(true);
+
+  template.querySelector(".item-name").innerText = data.detail.name;
+  template.querySelector(".item-size").innerText = data.size;
+  template.querySelector(".item-quantity").innerText = data.quantity;
+  template.querySelector(".item-price").innerText = data.product.price;
+  template.querySelector(".cost").innerText = data.quantity * data.product.price;
+
+  return template;
+}
+
+export const createOrderListRender = (products) => {
+  products.forEach((product) => {
+    orderListGroup? orderListGroup.append(createOrderList(product)) : "";
+  })
+}
 
 // Handlers
 
