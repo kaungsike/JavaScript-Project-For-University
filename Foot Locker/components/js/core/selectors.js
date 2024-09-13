@@ -18,3 +18,6 @@ export const orderListGroup = document.querySelector("#orderListGroup")
 
 export const productCard = document.querySelector("#productCard")
 export const header = document.querySelector(".header")
+
+
+export const costTotal = document.querySelector("#costTotal");

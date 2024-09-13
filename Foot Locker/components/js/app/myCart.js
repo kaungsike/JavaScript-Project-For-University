@@ -1,4 +1,4 @@
-import { addedItemTemplate, itemGroup, orderListGroup, orderListTemplate } from "../core/selectors.js";
+import { addedItemTemplate, costTotal, itemGroup, orderListGroup, orderListTemplate } from "../core/selectors.js";
 export const createAddedItem = (data) => {
   const template = addedItemTemplate.content.cloneNode(true);
   console.log(data)
@@ -37,15 +37,17 @@ export const createOrderList = (data) => {
   template.querySelector(".item-size").innerText = data.size;
   template.querySelector(".item-quantity").innerText = data.quantity;
   template.querySelector(".item-price").innerText = data.product.price;
-  template.querySelector(".cost").innerText = data.quantity * data.product.price;
+  template.querySelector(".costs").innerText = data.quantity * data.product.price;
 
   return template;
 }
 
 export const createOrderListRender = (products) => {
+  orderListGroup? orderListGroup.innerHTML="" : '';
   products.forEach((product) => {
     orderListGroup? orderListGroup.append(createOrderList(product)) : "";
   })
+  updateTotalCost()
 }
 
 // Handlers
@@ -73,8 +75,10 @@ export const handleDelBtn = (e) => {
 
       createAddedItemRender(JSON.parse(localStorage.getItem("data")))
 
+
       }
     }
+    updateTotalCost()
 };
 
 
@@ -114,6 +118,14 @@ export const handleAddSubBtn = (e) => {
 
     createAddedItemRender(JSON.parse(localStorage.getItem("data")))
   }
+  createOrderListRender(JSON.parse(localStorage.getItem("data")))
+  updateTotalCost();
 }
 
 // for localStorage.js
+
+
+// cost total
+export const updateTotalCost = () => {
+   costTotal? costTotal.innerText = [...document.querySelectorAll(".cost")].reduce((cv,pv) => cv + parseFloat(pv.innerHTML),0) : '';
+}
