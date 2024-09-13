@@ -15,6 +15,8 @@ export const createAddedItem = (data) => {
   template.querySelector(".del-btn").setAttribute("color", data.product.color);
   template.querySelector(".sub-btn").setAttribute("color", data.product.color);
   template.querySelector(".add-btn").setAttribute("color", data.product.color);
+  template.querySelector(".add-btn").setAttribute("size", data.size);
+  template.querySelector(".sub-btn").setAttribute("size", data.size);
   template.querySelector(".sub-btn").setAttribute("id", data.id);
   template.querySelector(".add-btn").setAttribute("id", data.id);
 
@@ -41,10 +43,9 @@ export const createOrderList = (data) => {
 
   return template;
 }
-
 export const createOrderListRender = (products) => {
-  orderListGroup? orderListGroup.innerHTML="" : '';
-  products.forEach((product) => {
+  orderListGroup? orderListGroup.innerHTML = "" : ''
+    products.forEach((product) => {
     orderListGroup? orderListGroup.append(createOrderList(product)) : "";
   })
   updateTotalCost()
@@ -88,8 +89,9 @@ export const handleAddSubBtn = (e) => {
     const currentData = JSON.parse(localStorage.getItem("data"))
     
     const afterData = currentData.map((el) => {
-      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color")){
+      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color") && el.size == e.target.getAttribute("size")){
         el.quantity +=1;
+        console.log(e.target)
       }
       return el
     })
@@ -103,7 +105,7 @@ export const handleAddSubBtn = (e) => {
     const currentData = JSON.parse(localStorage.getItem("data"))
     
     const afterData = currentData.map((el) => {
-      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color")){
+      if(el.id==e.target.getAttribute("id") && el.product.color==e.target.getAttribute("color")  && el.size == e.target.getAttribute("size")){
         if(el.quantity==1){
           alert("Can't reduce more!")
         }
