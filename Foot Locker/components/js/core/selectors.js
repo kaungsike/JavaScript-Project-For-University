@@ -22,3 +22,6 @@ export const header = document.querySelector(".header")
 
 export const costTotal = document.querySelector("#costTotal");
 export const categories = document.querySelector(".categories");
+
+export const registerForm = document.querySelector("#registerForm");
+export const loginForm = document.querySelector("#loginForm");

@@ -45,9 +45,9 @@ export const createOrderList = (data) => {
 }
 export const createOrderListRender = (products) => {
   orderListGroup? orderListGroup.innerHTML = "" : ''
-    products.forEach((product) => {
+  products?     products.forEach((product) => {
     orderListGroup? orderListGroup.append(createOrderList(product)) : "";
-  })
+  }) : ''
   updateTotalCost()
 }
 
