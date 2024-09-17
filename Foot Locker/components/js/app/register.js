@@ -19,7 +19,7 @@ export const handleAccountRegister = (e) => {
 // console.log(JSON.parse(localStorage.getItem("user")).email)
 
 export const handleAccountLogin = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     const email = JSON.parse(localStorage.getItem("user")).email;
     const password = JSON.parse(localStorage.getItem("user")).password;
@@ -29,7 +29,7 @@ export const handleAccountLogin = (e) => {
     const formData = new FormData(loginForm);
     if(formData.get("email") == email  &&  formData.get("password")== password){
         console.log("correct")
-        // window.location.href = "./home.html"
+        document.querySelector("#toHome").click();
     }else{
         alert("Try Again!")
     }
