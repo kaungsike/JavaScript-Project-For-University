@@ -538,6 +538,66 @@ const products = [
             },
 
         ]
+    },
+
+    {
+        id : 8,
+        img : "https://images.footlocker.com/is/image/EBFL2/B9108102?wid=250&hei=250",
+        name : 'Nike Dunk Low',
+        brand : 'Nike',
+        gender : "Girls' Preschool",
+        color : 'Laser Fuchsia / White',
+        price : 70,
+        rating : 4.6,
+        product : [
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/B9108102?wid=250&hei=250',
+                color : 'Laser Fuchsia / White',
+                price : 155,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/B9108102_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/B9108102_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/B9108102_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/B9108102_03?wid=581&hei=581&fmt=png-alpha',
+                    },
+                    {
+                        img : "https://images.footlocker.com/is/image/EBFL2/B9108102_04?wid=581&hei=581&fmt=png-alpha",
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/B9108102_05?wid=581&hei=581&fmt=png-alpha'
+                    }
+                ]
+            },
+            {
+                img : 'https://images.footlocker.com/is/image/EBFL2/F9108110?wid=250&hei=250',
+                color : 'White / Viotech / White',
+                price : 70,
+                main_img : "https://images.footlocker.com/is/image/EBFL2/F9108110_01?wid=581&hei=581&fmt=png-alpha",
+                productInfo : [
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/F9108110_01?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/F9108110_02?wid=581&hei=581&fmt=png-alpha'
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/F9108110_03?wid=581&hei=581&fmt=png-alpha',
+                    },
+                    {
+                        img : "https://images.footlocker.com/is/image/EBFL2/F9108110_04?wid=581&hei=581&fmt=png-alpha",
+                    },
+                    {
+                        img : 'https://images.footlocker.com/is/image/EBFL2/F9108110_05?wid=581&hei=581&fmt=png-alpha',
+                    }
+                ]
+            },
+
+        ]
     }
 
     // {

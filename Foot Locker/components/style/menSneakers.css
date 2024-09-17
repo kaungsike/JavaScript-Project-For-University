@@ -79,12 +79,13 @@
             height: 100%;
             align-items: center;
             gap: 15px;
-            a{
+            p{
                 text-decoration: none;
                 font: bold;
                 color: black;
+                cursor: pointer;
             }
-            a:hover{
+            p:hover{
                 text-decoration: underline;
                 text-underline-offset: 5px;
             }

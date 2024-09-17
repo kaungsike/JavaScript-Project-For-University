@@ -3,7 +3,8 @@ import { handleProductCardMinImg } from "../app/card.js";
 import { handleProductDetailCategoryImg, handleProductDetailMainCategoryImg, handleSizeChoosing } from "../app/detail.js";
 import { handleAddSubBtn, handleDelBtn } from "../app/myCart.js";
 import { appendBorder } from "./animate.js";
-import { itemGroup, productCardGroup, productDetailGroup } from "./selectors.js";
+import { handleSneakerType } from "./filter.js";
+import { categories, itemGroup, productCardGroup, productDetailGroup } from "./selectors.js";
 
 
 const listener = () => {
@@ -27,6 +28,7 @@ const listener = () => {
       itemGroup.addEventListener("click",handleDelBtn)
       itemGroup.addEventListener("click",handleAddSubBtn)
    }
+   categories.addEventListener("click",handleSneakerType)
 
    
    

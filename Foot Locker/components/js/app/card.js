@@ -63,6 +63,7 @@ export const createMinImg = (product) => {
 
 
 export const createProductCardRender = (products) => {
+  productCardGroup? productCardGroup.innerHTML = "" : '';
   products.forEach((product) => {
     if(productCardGroup!=null){
       productCardGroup.append(createProductCard(product));
