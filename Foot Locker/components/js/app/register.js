@@ -29,7 +29,7 @@ export const handleAccountLogin = (e) => {
     const formData = new FormData(loginForm);
     if(formData.get("email") == email  &&  formData.get("password")== password){
         console.log("correct")
-        window.location.href = "../index.html"
+        window.location.href = "./home.html"
     }else{
         alert("Try Again!")
     }
