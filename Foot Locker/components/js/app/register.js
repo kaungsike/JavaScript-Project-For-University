@@ -29,8 +29,10 @@ export const handleAccountLogin = (e) => {
     const formData = new FormData(loginForm);
     if(formData.get("email") == email  &&  formData.get("password")== password){
         console.log("correct")
-        document.querySelector("#toHome").click();
+        window.location.href = "home.html"
+        // document.querySelector("#toHome").click();
     }else{
         alert("Try Again!")
+        loginForm.reset();
     }
 }
