@@ -28,17 +28,25 @@ export const handleAccountRegister = (e) => {
 export const handleAccountLogin = (e) => {
     // e.preventDefault();
 
-    const email = JSON.parse(localStorage.getItem("user")).email;
-    const password = JSON.parse(localStorage.getItem("user")).password;
+
+    if(localStorage.getItem("user")){
+        const email = JSON.parse(localStorage.getItem("user")).email;
+        const password = JSON.parse(localStorage.getItem("user")).password;
+        const formData = new FormData(loginForm);
+        if(formData.get("email") == email  &&  formData.get("password")== password){
+            // e.preventDefault();
+            console.log(localStorage.getItem("user"));
+            console.log("correct")
+        }else{
+            e.preventDefault();
+            alert("Try Again!")
+        }
+    }else{
+        e.preventDefault();
+        alert("Account not found!")
+    }
 
     console.log(email,password)
 
-    const formData = new FormData(loginForm);
-    if(formData.get("email") == email  &&  formData.get("password")== password){
-        console.log("correct")
-    }else{
-        e.preventDefault();
-        alert("Try Again!")
-        loginForm.reset();
-    }
+    loginForm.reset(); 
 }
