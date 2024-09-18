@@ -2,15 +2,22 @@ import { loginForm, registerForm } from "../core/selectors.js";
 
 export const handleAccountRegister = (e) => {
     // e.preventDefault();
+
     const formData = new FormData(registerForm)
-    const userDetail = {
-        name : formData.get("name"),
-        email : formData.get("email"),
-        password : formData.get("password")
-    }
+    if(formData.get("password")==formData.get("conformPassword")){
+        const userDetail = {
+            name : formData.get("name"),
+            email : formData.get("email"),
+            password : formData.get("password")
+        }
 
     console.log(userDetail);
     localStorage.setItem("user",JSON.stringify(userDetail))
+    }else{
+        e.preventDefault();
+        alert("Your conform password is incorrect!")
+        location.href = "./index.html"
+    }
 
     registerForm.reset();
 }
@@ -19,7 +26,7 @@ export const handleAccountRegister = (e) => {
 // console.log(JSON.parse(localStorage.getItem("user")).email)
 
 export const handleAccountLogin = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     const email = JSON.parse(localStorage.getItem("user")).email;
     const password = JSON.parse(localStorage.getItem("user")).password;
@@ -29,9 +36,8 @@ export const handleAccountLogin = (e) => {
     const formData = new FormData(loginForm);
     if(formData.get("email") == email  &&  formData.get("password")== password){
         console.log("correct")
-        window.location.href = "home.html"
-        // document.querySelector("#toHome").click();
     }else{
+        e.preventDefault();
         alert("Try Again!")
         loginForm.reset();
     }

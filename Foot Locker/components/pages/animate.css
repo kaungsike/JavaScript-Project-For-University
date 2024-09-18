@@ -1,3 +1,11 @@
 .border-active{
     border: 1px solid rgba(0, 0, 0, 0.418) !important;
 }
+
+.none{
+    display: none;
+}
+
+.display{
+    display: block;
+}

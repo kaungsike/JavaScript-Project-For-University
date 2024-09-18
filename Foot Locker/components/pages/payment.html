@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="./animate.css">
+</head>
+<body>
+    <section class="section-1">
+        <div class="from-container">
+            <header>
+                <h2>Total Cost <span id="totalCost"></span></h2>
+            </header>
+            <form id="paymentForm" class="register-form" action="">
+                <div class="input-container">
+                    <div class="input-container">
+                        <label for="">Name</label>
+                        <input required type="text" placeholder="Your Payment Account Name">
+                    </div>
+                    <div class="input-container">
+                        <label for="">Phone</label>
+                        <input required type="tel" placeholder="Your Payment Account Phone Number">
+                    </div>
+                    <p for="email">Select Payment Method </p>
+                    <div value="Wave" class="payment-container">
+                        <div class="payment">
+                            <img style="pointer-events: none;" src="https://images.sftcdn.net/images/t_app-icon-m/p/07b6a456-b8ce-4264-b490-6d53e6db665e/1250934406/wavepay-app-by-wave-money-logo" alt="">
+                        </div>
+                        <div class="payment">
+                            <img style="pointer-events: none;" src="https://play-lh.googleusercontent.com/cnKJYzzHFAE5ZRepCsGVhv7ZnoDfK8Wu5z6lMefeT-45fTNfUblK_gF3JyW5VZsjFc4=w240-h480-rw" alt="">
+                        </div>
+                    </div>
+                    <div id="QRContainer" class="qrCode-container">
+                        <div class="noPayment">
+                            <img style="margin-bottom: 5px;" src="./undraw_not_found_re_bh2e.svg" alt="">
+                            <p style="mask-type: 15px;">No payment method is selected</p>
+                        </div>
+                    </div>
+                    <div class="checkbox" style="display: flex;align-items: center;width: 100%;gap: 10px;">
+                        <input required style="width: 15px;" type="checkbox"><p style="margin: 0;font-size: 15px;">I've done payment</p>
+                    </div>
+                </div>
+                    
+                <button type="submit" style="width: 95%;height: 40px;background-color: black;color: white;margin-left: 20px;border: none;margin-top: 20px;">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <template id="paymentTemplate">
+        <img src="./wave.jpg" alt="">
+        <p>Phone - 09-778877665</p>
+        <p>Name - Admin</p>
+    </template>
+</body>
+<script type="module" src="../main.js"></script>
+</html>

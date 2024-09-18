@@ -8,6 +8,9 @@ export const mainCategoryImgTemplate = document.querySelector("#mainCategoryImgT
 // in myCart.html
 export const addedItemTemplate = document.querySelector("#addedItemTemplate");
 export const orderListTemplate = document.querySelector("#orderListTemplate");
+export const noUserAccountTemplate = document.querySelector("#noUserAccountTemplate");
+export const alreadyUserAccountTemplate = document.querySelector("#alreadyUserAccountTemplate");
+export const paymentTemplate = document.querySelector("#paymentTemplate");
 
 
 export const productCardGroup = document.querySelector("#productCardGroup")
@@ -24,4 +27,10 @@ export const costTotal = document.querySelector("#costTotal");
 export const categories = document.querySelector(".categories");
 
 export const registerForm = document.querySelector("#registerForm");
+export const paymentForm = document.querySelector("#paymentForm");
 export const loginForm = document.querySelector("#loginForm");
+export const searchBoxContainer = document.querySelector("#searchBoxContainer");
+export const QRContainer = document.querySelector("#QRContainer");
+export const orderBtn = document.querySelector("#orderBtn");
+export const myCart = document.querySelector("#myCart");
+export const profile = document.querySelector("#profile");

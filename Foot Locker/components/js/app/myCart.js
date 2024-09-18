@@ -26,7 +26,7 @@ export const createAddedItem = (data) => {
 export const createAddedItemRender = (products) => {
   if(itemGroup!=null){
     itemGroup.innerHTML = "";
-    products.forEach((product) => {
+    products?.forEach((product) => {
         itemGroup.append(createAddedItem(product));
     });
   }
@@ -82,6 +82,16 @@ export const handleDelBtn = (e) => {
     updateTotalCost()
 };
 
+export const handleOrderBtn = (e) => {
+  if (e.target.classList.contains("order-btn")) {
+
+    localStorage.getItem("data") ?     JSON.parse(localStorage.getItem("data")).length>0  ? location.href="./payment.html" : alert("No item in cart!") : alert("No item in cart!")
+
+  }
+}
+
+
+
 
 // for quantity
 export const handleAddSubBtn = (e) => {
@@ -131,3 +141,5 @@ export const handleAddSubBtn = (e) => {
 export const updateTotalCost = () => {
    costTotal? costTotal.innerText = [...document.querySelectorAll(".cost")].reduce((cv,pv) => cv + parseFloat(pv.innerHTML),0) : '';
 }
+
+

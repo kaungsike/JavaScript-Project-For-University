@@ -5,5 +5,9 @@ export const appendBorder = (e) => {
     }else if(e.target.classList.contains("min-category-img-btn")){
         document.querySelector(".border-active")?.classList.remove("border-active");
         e.target.classList.add("border-active")
+    }else if(e.target.classList.contains("payment")){
+        document.querySelector(".border-active")?.classList.remove("border-active");
+        e.target.classList.add("border-active")
     }
 }
+

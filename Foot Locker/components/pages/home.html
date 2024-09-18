@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./animate.css">
   </head>
   <body>
     <main class="">
       <header class="header">
-        <div class="search-box-container container">
+        <div id="searchBoxContainer" class="search-box-container container">
           <img src="https://www.footlocker.com/images/FL/logo.svg" alt="" />
-          <div class="search-box border">
-            <input type="search" placeholder="Search" />
+          <div style="border: none;" class="search-box border">
+            <!-- <input type="search" placeholder="Search" />
             <button>
               <svg
                 style="width: 25px; color: white"
@@ -29,29 +30,16 @@
                   d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                 />
               </svg>
-            </button>
+            </button> -->
+            <img style="width: 1020px;height: 46px;" src="https://images.footlocker.com/content/dam/final/footlocker/site/backpages/2024/asp/240712-fl-recGXvVLm-sneaker-season-is-here-thin-banner.jpg" alt="">
           </div>
-          <div class="profile-container border">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              style="width: 25px"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-              />
-            </svg>
-            <p>Sign in | Join us</p>
-          </div>
+          <!-- append with js depend on localStore -->
+
         </div>
         <div class="category-nev-container container">
           <div class="categories">
-            <p h value="All">All</p>
+            <a href="./home.html" value="All">Home</a>
+            <p value="All">All</p>
             <p value="Men's" href="">Men's</p>
             <p value="Women's" href="">Women's</p>
             <p value="Boys' Preschool">Boy's</p>
@@ -59,7 +47,7 @@
             <p value="Brands">Brands</p>
           </div>
           <div class="my-cart-container">
-            <button class="heart">
+            <button style="display: none;" class="heart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -75,7 +63,7 @@
                 />
               </svg>
             </button>
-            <a style="text-decoration: none;color: black;" href="./pages/myCart.html" class="my-cart">
+            <a style="text-decoration: none;color: black;" href="./myCart.html" class="my-cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -130,32 +118,32 @@
 
       <section class="section-2">
         <div class="section-2-container container">
-          <a href="">
+          <a href="./menSneakers.html#All">
             <img
               src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/august/240805-fl-reca1bXWd-recaaX9BW-recrz0iju-recnaFceE-recPSvJKC-1up.jpg"
               alt=""
             />
           </a>
           <div>
-            <a href="./pages/menSneakers.html">
+            <a href="./menSneakers.html#Men's">
               <img
                 src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/august/240805-fl-reckhCElj-mwk-new-arrivals-mens-4up.jpg"
                 alt=""
               />
             </a>
-            <a href="">
+            <a href="./menSneakers.html#Women's">
               <img
                 src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/august/240805-fl-reckhCElj-mwk-new-arrivals-womens-4up.jpg"
                 alt=""
               />
             </a>
 
-            <a href="">
+            <a href="./menSneakers.html#Boys' Preschool">
               <img
                 src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/august/240805-fl-reckhCElj-mwk-new-arrivals-kids-4up.jpg"
                 alt=""
             /></a>
-            <a href="">
+            <a href="./menSneakers.html#All">
               <img
                 src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/august/240805-fl-reckhCElj-mwk-new-arrivals-clothing-accessories-4up.jpg"
                 alt=""
@@ -166,7 +154,7 @@
 
       <section class="section-3">
         <div class="section-3-container container">
-          <a href="">
+          <a href="./menSneakers.html#All">
             <img
               src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2024/july/240721-fl-recU7jzjP-nb-promo-v2-thin-banner-a.gif"
               alt=""
@@ -189,102 +177,63 @@
         </div>
       </section>
 
-      <section class="section-4">
-        <div class="section-4-container container">
-          <div class="title-container">
-            <h4>Back to School Kicks</h4>
-          </div>
-          <div class="item-container">
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-D1391100.jpg"
-                alt=""
-              />
-              <p>Nike Dunk Low</p>
+
+
+      <section class="footer">
+        <div class="footer-container container">
+          <div class="upper-container">
+            <div class="a">
+              <a href="./home.html">Home</a>
+              <a href="./myCart.html">Cart</a>
+              <a href="./menSneakers.html#All">Store</a>
+              <a href="./faq.html">Faqs</a>
             </div>
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-31086401.jpg"
-                alt=""
-              />
-              <p>PUMA LaFrance Moment</p>
-            </div>
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-kfl-D2920111-update.jpg"
-                alt=""
-              />
-              <p>Nike Air Force 1 Low</p>
-            </div>
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-IE0429.jpg"
-                alt=""
-              />
-              <p>Adidas Originals Gazelle Bold</p>
-            </div>
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-V1358001.jpg"
-                alt=""
-              />
-              <p>Nike Zoom Vomero 5</p>
-            </div>
-            <div class="item-card">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/new-arrivals/new-arrival-6up-H5484.jpg"
-                alt=""
-              />
-              <p>Adidas Originals Gazelle Indoor</p>
+            <div class="b">
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="vk.com"><i class="fa-brands fa-vk"></i></a>
+              <a href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
           </div>
-          <a href="">
-            <img
-              src="https://images.footlocker.com/content/dam/final/footlocker/site/backpages/2024/asp/240808-fl-reckzFipl-nike-dunk-low-w-launch-asp.jpg"
-              alt=""
-            />
-          </a>
-          <div class="brand-container">
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/evergreen/brand-6up-nike-jordan.jpg"
-                alt=""
-              />
-            </a>
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/evergreen/brand-6up-new-balance.jpg"
-                alt=""
-              />
-            </a>
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/evergreen/brand-6up-adidas.jpg"
-                alt=""
-              />
-            </a>
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/evergreen/brands-brand-6up-asics.jpg"
-                alt=""
-              />
-            </a>
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/footlocker/site/backpages/2024/back-to-school/240708-fl-flca-83998-bts-lp-brand-6up-on.jpg"
-                alt=""
-              />
-            </a>
-            <a href="">
-              <img
-                src="https://images.footlocker.com/content/dam/final/FootLockerInc/site/evergreen/brand-6up-hoka.jpg"
-                alt=""
-              />
-            </a>
+          <div class="lower-container">
+            <img src="https://www.footlocker.com/images/FL/logo.svg" alt="">
+            <p>
+              © 2024 Footlocker.com, Inc. All Rights Reserved</p>
+          
           </div>
         </div>
       </section>
+
+    </div>
     </main>
+
+    <template id="noUserAccountTemplate">
+      <div class="profile-container border">
+        <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <a style="color: white;text-decoration: none;" href="./index.html">Sign in | Join us</a>
+      </div>
+    </template>
+
+    <template id="alreadyUserAccountTemplate">
+      <div style="height: 50px;width: 50px;border-radius: 50%;background-color: white;position: relative;cursor: pointer;" class="profile-container border">
+        <p class="profileClick" id="profile" style="color: white;text-decoration: none;display: flex;align-items: center;justify-content: center;"><img style="width: 50px;height: 50px;pointer-events: none;" src="./undraw_female_avatar_efig.svg" alt=""></p>
+
+        <p id="logout" class="logout none" style="position: absolute;background-color: rgb(219, 33, 33);transform: translate(60px);padding: 6px 12px;border-radius: 10px;font-size: 16px;cursor: pointer;">Logout</p>
+      </div>
+    </template>
   </body>
   <script type="module" src="../main.js"></script>
 </html>

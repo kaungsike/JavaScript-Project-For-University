@@ -1,5 +1,6 @@
 import { createProductCardRender } from "../app/card.js"
 import { createProductDetailRender } from "../app/detail.js"
+import { createAlreadyUserAccountRender, createNoUserAccountRender } from "../app/isAccountExist.js"
 import { createAddedItemRender, createOrderListRender } from "../app/myCart.js"
 import products from "../data/productsData.js"
 
@@ -11,6 +12,13 @@ const initialRender = () => {
         createProductCardRender(products);
     }
     createProductDetailRender(products)
+    
+    if(JSON.parse(localStorage.getItem("user"))==null){
+        createNoUserAccountRender();
+    }else{
+        createAlreadyUserAccountRender();
+    }
+
     // appendClass();
     createAddedItemRender(JSON.parse(localStorage.getItem("data")))
     createOrderListRender(JSON.parse(localStorage.getItem("data")))

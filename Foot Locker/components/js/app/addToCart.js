@@ -12,9 +12,14 @@ export const addToCartHandler = (e) => {
         console.log(JSON.parse(localStorage.getItem("data")))
 
         if(JSON.parse(localStorage.getItem("data")) == null){
-            setDataToLocalStore(id,index,1,size)
-            console.log("is null")
-            alert("Item added!")
+            if(JSON.parse(localStorage.getItem("user"))==null){
+                alert("Please login first!")
+                window.location.href = "./login.html";
+            }else{
+                setDataToLocalStore(id,index,1,size)
+                console.log("is null")
+                alert("Item added!")
+            }    
         }
         else if(JSON.parse(localStorage.getItem("data"))!=null){
             console.log("not null")

@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./myCart.css" />
+    <link rel="stylesheet" href="./animate.css">
   </head>
   <body>
     <main>
       <header class="header">
-        <div class="search-box-container container">
+        <div id="searchBoxContainer" class="search-box-container container">
           <img src="https://www.footlocker.com/images/FL/logo.svg" alt="" />
-          <div class="search-box border">
-            <input type="search" placeholder="Search" />
+          <div style="border: none;" class="search-box border">
+            <!-- <input type="search" placeholder="Search" />
             <button>
               <svg
                 style="width: 25px; color: white"
@@ -29,38 +30,23 @@
                   d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                 />
               </svg>
-            </button>
+            </button> -->
+            <img style="width: 1020px;height: 46px;" src="https://images.footlocker.com/content/dam/final/footlocker/site/backpages/2024/asp/240712-fl-recGXvVLm-sneaker-season-is-here-thin-banner.jpg" alt="">
           </div>
-          <div class="profile-container border">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              style="width: 25px"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-              />
-            </svg>
-            <p>Sign in | Join us</p>
-          </div>
+          <!-- append with js depend on localStore -->
+
         </div>
         <div class="category-nev-container container">
           <div class="categories">
-            <p h value="All">All</p>
+            <a href="./home.html" value="All">Home</a>
+            <p value="All">All</p>
             <p value="Men's" href="">Men's</p>
             <p value="Women's" href="">Women's</p>
             <p value="Boys' Preschool">Boy's</p>
             <p value="Girls' Preschool">Girl's</p>
-            <!-- <p value="New Arrivals" href="">New Arrivals</p> -->
-            <p value="Brands">Brands</p>
           </div>
           <div class="my-cart-container">
-            <button class="heart">
+            <button style="display: none;" class="heart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,7 +62,7 @@
                 />
               </svg>
             </button>
-            <a href="./myCart.html" style="text-decoration: none;color: black;" class="my-cart">
+            <a style="text-decoration: none;color: black;" href="./pages/myCart.html" class="my-cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -96,7 +82,7 @@
         </div>
       </header>
 
-      <section class="section-1">
+      <section style="margin-bottom: 100px;" id="myCart" class="section-1">
         <div class="section-1-container container">
           <div class="title-container">
             <h5>My Cart</h5>
@@ -110,7 +96,7 @@
               <div class="item-group-container" id="itemGroup">
             <!-- append my looping the localStore array object -->
               </div>
-              <div class="item-summary-container">
+              <div id="itemSummaryContainer" class="item-summary-container">
                 <h4>Order Summary</h4>
                 <div class="summary-container">
                   <div class="header">
@@ -141,10 +127,35 @@
                   </table>
                 </div>
                 <div style="width: 100%;height: 100%;">
-                  <button style="height: 40px;background-color: black;color: white;border: none;width: 100%;">Order</button>
+                  <button id="orderBtn" class="order-btn" style="height: 40px;background-color: black;color: white;border: none;width: 100%;">Order</button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="footer-container container">
+          <div class="upper-container">
+            <div class="a">
+              <a href="./home.html">Home</a>
+              <a href="./myCart.html">Cart</a>
+              <a href="./menSneakers.html#All">Store</a>
+              <a href="./faq.html">Faqs</a>
+            </div>
+            <div class="b">
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="vk.com"><i class="fa-brands fa-vk"></i></a>
+              <a href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="lower-container">
+            <img src="https://www.footlocker.com/images/FL/logo.svg" alt="">
+            <p>
+              © 2024 Footlocker.com, Inc. All Rights Reserved</p>
+          
           </div>
         </div>
       </section>
@@ -444,6 +455,35 @@
       </template>
 
     </main>
+
+    <template id="noUserAccountTemplate">
+      <div class="profile-container border">
+        <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              style="width: 25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <a style="color: white;text-decoration: none;" href="./index.html">Sign in | Join us</a>
+      </div>
+    </template>
+
+    <template id="alreadyUserAccountTemplate">
+      <div style="height: 50px;width: 50px;border-radius: 50%;background-color: white;position: relative;cursor: pointer;" class="profile-container border">
+        <p class="profileClick" id="profile" style="color: white;text-decoration: none;display: flex;align-items: center;justify-content: center;"><img style="width: 50px;height: 50px;pointer-events: none;" src="./undraw_female_avatar_efig.svg" alt=""></p>
+
+        <p id="logout" class="logout none" style="position: absolute;background-color: rgb(219, 33, 33);transform: translate(60px);padding: 6px 12px;border-radius: 10px;font-size: 16px;cursor: pointer;">Logout</p>
+      </div>
+    </template>
+
   </body>
   <script type="module" src="../main.js"></script>
 </html>

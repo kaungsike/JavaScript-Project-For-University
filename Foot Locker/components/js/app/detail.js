@@ -74,8 +74,8 @@ export const handleProductDetailMainCategoryImg = (e) => {
         const card = e.target.closest("#productDetail");
 
         // the data that the user click tha img that need from productData.js array object for 1st side of product detail 
+        
         const product = products[window.location.href.split("#")[1]-1].product[e.target.getAttribute("index")]
-
         card.querySelector("#mainImg").src = product.main_img;
 
         document.querySelector(".add-to-cart-btn").setAttribute("index",e.target.getAttribute("index"))

@@ -9,7 +9,7 @@
   <body>
     <main>
       <header class="header">
-        <div class="search-box-container container">
+        <div id="searchBoxContainer" class="search-box-container container">
           <img src="https://www.footlocker.com/images/FL/logo.svg" alt="" />
           <div class="search-box border">
             <input type="search" placeholder="Search" />
@@ -31,36 +31,20 @@
               </svg>
             </button>
           </div>
-          <div class="profile-container border">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              style="width: 25px"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-              />
-            </svg>
-            <p>Sign in | Join us</p>
-          </div>
+          <!-- append with js depend on localStore -->
+
         </div>
         <div class="category-nev-container container">
           <div class="categories">
-            <a href="">Men's</a>
-            <a href="">Women's</a>
-            <a href="">Kid's</a>
-            <a href="">New Arrivals</a>
-            <a href="">Release</a>
-            <a href="">Brands</a>
-            <a href="">Rewards</a>
+            <a href="./home.html" value="All">Home</a>
+            <p value="All">All</p>
+            <p value="Men's" href="">Men's</p>
+            <p value="Women's" href="">Women's</p>
+            <p value="Boys' Preschool">Boy's</p>
+            <p value="Girls' Preschool">Girl's</p>
           </div>
           <div class="my-cart-container">
-            <button class="heart">
+            <button style="display: none;" class="heart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,7 +60,7 @@
                 />
               </svg>
             </button>
-            <a href="./myCart.html" style="text-decoration: none;color: black;" class="my-cart">
+            <a style="text-decoration: none;color: black;" href="./myCart.html" class="my-cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -96,7 +80,7 @@
         </div>
       </header>
 
-      <section class="section-1">
+      <section style="margin-bottom: 150px;" class="section-1">
         <div class="section-1-container container">
           <div class="header-container">
             <h4>Store pickup</h4>
@@ -143,7 +127,7 @@
         </div>
       </section>
 
-      <section class="section-2">
+      <!-- <section class="section-2">
         <div class="section-2-container container">
           <div class="header-container">
             <h4>Store Pickup FAQ</h4>
@@ -252,6 +236,31 @@
                 </svg>
               </div>
 
+          </div>
+        </div>
+      </section> -->
+
+      <section class="footer">
+        <div class="footer-container container">
+          <div class="upper-container">
+            <div class="a">
+              <a href="./home.html">Home</a>
+              <a href="./myCart.html">Cart</a>
+              <a href="./menSneakers.html#All">Store</a>
+              <a href="./faq.html">Faqs</a>
+            </div>
+            <div class="b">
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="vk.com"><i class="fa-brands fa-vk"></i></a>
+              <a href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <div class="lower-container">
+            <img src="https://www.footlocker.com/images/FL/logo.svg" alt="">
+            <p>
+              © 2024 Footlocker.com, Inc. All Rights Reserved</p>
+          
           </div>
         </div>
       </section>
